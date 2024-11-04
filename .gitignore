@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+public/css/style.css.map  # If you use CSS sourcemaps
+public/js/*.map           # If you have JavaScript sourcemaps
+
+# Optional: Ignore specific IDE/editor files
+.vscode/
+.idea/
+*.swp
