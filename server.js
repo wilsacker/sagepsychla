@@ -14,19 +14,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Define routes
 app.get('/', (req, res) => {
-    res.render('home', { title: 'Home' });
+    res.render('pages/home', { title: 'Home' });
 });
 
 app.get('/about', (req, res) => {
-    res.render('about', { title: 'About Us' });
+    res.render('pages/about', { title: 'About Us' });
 });
 
 app.get('/services', (req, res) => {
-    res.render('services', { title: 'Our Services' });
+    res.render('pages/services', { title: 'Our Services' });
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact', { title: 'Contact Us' });
+    res.render('pages/contact', { title: 'Contact Us' });
 });
 
 // Start the server

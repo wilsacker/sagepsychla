@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}} - Sage Psychological Services</title>
+    <meta name="description" content="Sage Psychological Services provides solution-focused therapy and assessments to help clients achieve clarity and growth. Serving Los Angeles and surrounding areas.">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Sage Psychological Services">
+    <meta property="og:description" content="Insight. Growth. Empowerment. Solution-focused therapy in Los Angeles.">
+    <meta property="og:image" content="/images/social-image.jpg">
+    <meta property="og:url" content="https://your-website.com">
+
+    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Favicon Links -->
+    <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/images/favicon-16x16.png" sizes="16x16">
 </head>
-<body>
+<body aria-label="Sage Psychological Services">
+    
+    <!-- Header Partial -->
     {{> header}}
 
-    {{{body}}} <!-- This will be replaced by each page's content -->
+    <!-- Dynamic Content from Each Page -->
+    {{{body}}}
 
+    <!-- Footer Partial -->
     {{> footer}}
 
+    <!-- JavaScript -->
     <script src="/js/javascript.js"></script>
 </body>
 </html>

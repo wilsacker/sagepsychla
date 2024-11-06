@@ -1,3 +1,7 @@
+/* ==================================================
+   RESET & BASE STYLES
+================================================== */
+
 /* Reset */
 * {
     margin: 0;
@@ -14,31 +18,63 @@ body {
     color: #333;
 }
 
-/* Flex setup for main content */
 main {
     flex: 1;
 }
+
+/* ==================================================
+   HEADER & NAVIGATION
+================================================== */
 
 /* Header */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 20px 60px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 1em;
 }
 
-/* Logo */
+/* Logo & Title Button with Unified Hover Effect */
+#logo-title-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Indicates the whole area is clickable */
+    text-decoration: none; /* Remove any link styling if applied */
+    color: inherit; /* Ensure it inherits color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+#logo-title-button:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    color: #e74c3c; /* Change color on hover */
+}
+
+/* Logo Image inside the Button */
+.logo-img {
+    width: 40px; /* Adjust as needed for logo size */
+    height: 40px; /* Adjust as needed for logo size */
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+#logo-title-button:hover .logo-img {
+    transform: scale(1.1); /* Apply scale to the logo when #logo-title-button is hovered */
+}
+
+/* Title Text */
 .logo h1 {
     margin: 0;
     font-size: 1.8em;
     font-weight: bold;
     letter-spacing: 0.5px;
+    color: #333;
+    text-decoration: none; /* Ensures no underline or link styling */
 }
 
-/* Center the navigation menu */
+/* Navigation */
 nav {
     flex-grow: 1;
     display: flex;
@@ -48,7 +84,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 40px; /* Increase gap for more spacing */
+    gap: 40px;
 }
 
 nav ul li a {
@@ -67,7 +103,7 @@ nav ul li a:hover {
 .appointment-button {
     padding: 8px 20px;
     margin-right: 20px;
-    margin-left: 130px;
+    margin-left: 190px;
     border: 1px solid #333;
     text-decoration: none;
     color: #333;
@@ -82,7 +118,29 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Hero Section */
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    font-size: 0.9em;
+    color: #777;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ==================================================
+   PAGE SECTIONS
+================================================== */
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
 .hero {
     position: relative;
     height: calc(100vh - 100px); /* Adjusts for header/footer */
@@ -99,7 +157,7 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 3em; /* Increase font size */
+    font-size: 3em;
     font-weight: 700;
     margin-bottom: 10px;
     letter-spacing: 1px;
@@ -112,7 +170,7 @@ nav ul li a:hover {
     letter-spacing: 0.5px;
 }
 
-/* CTA Button in Hero */
+/* Call-To-Action Button in Hero */
 .cta-button {
     padding: 12px 24px;
     background-color: #e74c3c;
@@ -129,20 +187,127 @@ nav ul li a:hover {
     background-color: #c0392b;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f4f4f4;
-    font-size: 0.9em;
-    color: #777;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* =====================================
+   WELCOME SECTION
+===================================== */
+
+.welcome {
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f7f7f7;
 }
 
-/* Mobile Styles */
+/* Welcome Content */
+.welcome-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.welcome-content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.welcome-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Welcome Image */
+.welcome-image {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.welcome-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* =====================================
+   EXPERTISE SECTION
+===================================== */
+
+.expertise {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.expertise h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.expertise h4 {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+/* Expertise Content */
+.expertise-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.expertise-item {
+    flex: 0 1 45%;
+    background-color: #F7F7F7;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expertise-item img {
+    width: 100%;
+    height: 180px; /* Fixed height to maintain consistency */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border-radius: 8px 8px 8px 8px;
+    margin-bottom: 15px;
+}
+
+.expertise-item h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.expertise-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+.expertise-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.expertise-item a:hover {
+    color: #0056b3;
+}
+
+/* ==================================================
+   RESPONSIVE DESIGN (MOBILE)
+================================================== */
+
 @media (max-width: 768px) {
+    /* Hero Adjustments */
     .hero {
         height: 50vh;
     }
@@ -155,8 +320,28 @@ footer {
         padding: 10px 20px;
     }
 
+    /* Navigation */
     nav ul {
         gap: 15px;
         flex-direction: column;
+    }
+
+    /* Welcome Section */
+    .welcome {
+        flex-direction: column;
+    }
+
+    .welcome-content, .welcome-image {
+        padding: 0;
+    }
+
+    /* Expertise Section */
+    .expertise-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expertise-item {
+        flex: 1 1 100%;
     }
 }
