@@ -22,6 +22,25 @@ main {
     flex: 1;
 }
 
+/* Base button style */
+.appointment-button {
+    padding: 8px 20px;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    border-radius: 4px;
+    display: inline-block; /* Ensures it behaves as a button */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.appointment-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
 /* ==================================================
    HEADER & NAVIGATION
 ================================================== */
@@ -99,23 +118,10 @@ nav ul li a:hover {
     color: #e74c3c;
 }
 
-/* Request Appointment Button */
-.appointment-button {
-    padding: 8px 20px;
+/* Nav-Specific Request Appointment Button Styles */
+.nav-appointment-button {
     margin-right: 20px;
-    margin-left: 190px;
-    border: 1px solid #333;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    letter-spacing: 0.8px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.appointment-button:hover {
-    background-color: #333;
-    color: #fff;
+    margin-left: 80px;
 }
 
 /* ==================================================
@@ -124,13 +130,90 @@ nav ul li a:hover {
 
 footer {
     text-align: center;
-    padding: 10px;
     background-color: #f4f4f4;
+    padding: 30px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.take-step-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.take-step-content {
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.take-step-content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.take-step-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.take-step-image {
+    flex: 2;
+    max-width: 800px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.take-step-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Footer-specific Request Appointment Button Styles */
+.footer-appointment-button {
+    margin-top: 10px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
     font-size: 0.9em;
     color: #777;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 0.8em;
+    color: #777;
 }
 
 /* ==================================================
@@ -162,12 +245,14 @@ footer {
     margin-bottom: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: black;
 }
 
 .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
     letter-spacing: 0.5px;
+    color: black;
 }
 
 /* Call-To-Action Button in Hero */
@@ -300,6 +385,13 @@ footer {
 
 .expertise-item a:hover {
     color: #0056b3;
+}
+
+.learn-more-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* ==================================================
