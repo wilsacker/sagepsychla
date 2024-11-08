@@ -398,35 +398,64 @@ footer {
 
 /* About Me Page */
 
+/* =====================================
+   ABOUT ME HEADER SECTION
+===================================== */
+
 .about {
     padding: 60px 40px;
     background-color: #f9f9f9;
     text-align: center;
+    font-family: "Prompt";
+}
+
+.about-header {
+    background-image: url('/images/about-page.jpg');
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    width: 100%; /* Full width */
+    padding: 150px 0; /* Adjust padding as needed for header height */
+    text-align: center;
+    color: white; /* Change text color as needed */
 }
 
 .about-header h1 {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #000;
 }
+
+/* =====================================
+   ABOUT ME CONTENT SECTION
+===================================== */
 
 .about-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    margin: 40px 100px;
+    margin: 50px 100px;
+}
+
+.about-image {
+    text-align: center; /* Center the image and connect section */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    flex: 0 0 300px; /* Set a fixed width for the image container */
 }
 
 .about-image img {
-    width: 300px;
+    width: 450px;
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 70px;
 }
 
 .about-text {
     flex: 1;
+    max-width: 800px;
 }
 
 .about-text h2 {
@@ -438,7 +467,36 @@ footer {
 .about-text p {
     font-size: 1.1em;
     line-height: 1.6;
+    padding-bottom: 15px;
     color: #555;
+}
+
+.about-connect {
+    margin-top: 10px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+}
+
+.connect-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    display: inline-flex;
+    gap: 15px; /* Adjust spacing between links */
+    margin-left: 20px;
+}
+
+.connect-list li {
+    display: inline;
+}
+
+.connect-list a {
+    text-decoration: none;
+    color: #000; /* Set color as needed */
+    font-weight: bold; /* Optional */
+}
+
+.connect-list a:hover {
+    text-decoration: underline; /* Add hover effect */
 }
 
 /* ==================================================
