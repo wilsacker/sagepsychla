@@ -494,13 +494,14 @@ footer {
     padding: 150px 0; /* Adjust padding as needed for header height */
     text-align: center;
     color: white; /* Change text color as needed */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .about-header h1 {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #000;
+    color: #f9f9f9;
 }
 
 /* =====================================
@@ -598,7 +599,7 @@ footer {
     padding: 150px 0; /* Adjust padding as needed for header height */
     text-align: center;
     color: white; /* Change text color as needed */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .services-header h1 {
