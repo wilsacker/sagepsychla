@@ -827,6 +827,7 @@ footer {
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block; /* Remove any flexbox behavior */
 }
 
 .new-contact-info h2 {
@@ -834,9 +835,15 @@ footer {
     margin-bottom: 20px;
 }
 
+.new-contact-info h3 {
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
 .new-contact-info p {
     font-size: 1.1em;
-    margin: 10px 0;
+    margin-bottom: 45px; /* Add margin to separate each line */
 }
 
 .new-contact-info a {
@@ -848,10 +855,11 @@ footer {
     text-decoration: underline;
 }
 
-/* New Map */
+/* Spacing for the map */
 .new-map iframe {
     border: none;
     border-radius: 8px;
+    margin-top: 20px; /* Add margin to the top of the map */
 }
 
 /* ==================================================
