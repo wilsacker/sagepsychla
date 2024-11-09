@@ -434,15 +434,16 @@ footer {
 .about-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    margin: 50px 100px;
+    justify-content: center;
+    gap: 90px;
+    margin: 50px auto;
+    max-width: 1600px; /* Limit the maximum width */
+    padding: 0 20px; /* Add side padding for smaller screens */
 }
 
 .about-image {
     text-align: center; /* Center the image and connect section */
     margin-bottom: 10px; /* Adjust spacing as needed */
-    flex: 0 0 300px; /* Set a fixed width for the image container */
 }
 
 .about-image img {
