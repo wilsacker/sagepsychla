@@ -25,6 +25,19 @@ app.get('/services', (req, res) => {
     res.render('pages/services', { title: 'Our Services' });
 });
 
+// New service-specific routes
+app.get('/assessments', (req, res) => {
+    res.render('pages/assessments', { title: 'Psychoeducational Assessments' });
+});
+
+app.get('/consults', (req, res) => {
+    res.render('pages/consults', { title: 'Clinical Consultation' });
+});
+
+app.get('/therapy', (req, res) => {
+    res.render('pages/therapy', { title: 'Solution-Focused Therapy' });
+});
+
 app.get('/contact', (req, res) => {
     res.render('pages/contact', { title: 'Contact Us' });
 });
