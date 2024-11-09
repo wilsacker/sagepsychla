@@ -722,6 +722,137 @@ footer {
     color: #0056b3;
 }
 
+/* Contact Page Styles */
+
+/* =====================================
+   CONTACT PAGE HEADER SECTION
+===================================== */
+.contact {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: "Prompt";
+}
+
+.contact-header {
+    background-image: url('/images/contact-page.jpeg');
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    width: 100%; /* Full width */
+    padding: 150px 0; /* Adjust padding as needed for header height */
+    text-align: center;
+    color: white; /* Change text color as needed */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.contact-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+
+/* Main Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form .checkbox-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .checkbox-group label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.contact-form button {
+    padding: 12px 24px;
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b;
+}
+
+/* New Contact Info Section */
+.new-contact-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.new-contact-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.new-contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.new-contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* New Map */
+.new-map iframe {
+    border: none;
+    border-radius: 8px;
+}
 
 /* ==================================================
    RESPONSIVE DESIGN (MOBILE)

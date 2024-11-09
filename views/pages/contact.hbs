@@ -1,1 +1,48 @@
-<h2>Contact Us Page</h2>
+<div class="contact-header">
+    <h1>Contact</h1>
+</div>
+
+<section class="contact-section">
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="/submit" method="POST">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="interested-in">Interested In</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interested-in" value="Evaluation"> Evaluation</label>
+                <label><input type="checkbox" name="interested-in" value="Therapy"> Therapy</label>
+                <label><input type="checkbox" name="interested-in" value="Consulting"> Consulting</label>
+            </div>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="new-contact-info">
+        <h2>Other Ways to Reach Me</h2>
+        <p><strong>Call or Text:</strong> (917) 617-6577</p>
+        <p><strong>Email:</strong> <a href="mailto:example@example.com">example@example.com</a></p>
+        <p><strong>My Office:</strong> 4568 S Highland Dr., Ste 200, Salt Lake City, Utah 84117</p>
+
+        <div class="new-map">
+            <!-- You can embed a Google Map here -->
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
