@@ -22,6 +22,10 @@ main {
     flex: 1;
 }
 
+.hidden-attribution {
+    display: none; /* Completely hides the element from view */
+}
+
 /* Base button style */
 .appointment-button {
     padding: 8px 20px;
@@ -721,6 +725,82 @@ footer {
     color: #0056b3;
 }
 
+/* Consults Page */
+
+/* =====================================
+   CONSULTS PAGE HEADER SECTION
+===================================== */
+
+.consults-header {
+    background-image: url('/images/consults-header.jpg'); /* Use service-specific image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.consults-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* =====================================
+   CONSULTS PAGE CONTENT SECTION
+===================================== */
+.consults-section {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+}
+
+.consults-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center content within the page */
+}
+
+.consults-description {
+    flex: 1;
+    min-width: 300px;
+}
+
+.consults-description h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.consults-description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.consults-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.consults-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Contact Page Styles */
 
 /* =====================================
@@ -901,5 +981,22 @@ footer {
 
     .expertise-item {
         flex: 1 1 100%;
+    }
+    .clinical-consultations-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .clinical-consultations-description,
+    .clinical-consultations-image {
+        flex: unset;
+    }
+
+    .clinical-consultations-description h2 {
+        font-size: 2em;
+    }
+
+    .clinical-consultations-image img {
+        max-width: 100%;
     }
 }
