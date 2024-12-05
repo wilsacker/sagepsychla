@@ -801,7 +801,167 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Page Styles */
+/* =====================================
+   ASSESSMENTS HEADER SECTION
+===================================== */
+.assessments-header {
+    background-image: url('/images/assessments-header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.assessments-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* =====================================
+   ASSESSMENTS INTRODUCTION SECTION
+===================================== */
+.assessments-intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+}
+
+.assessments-intro-section-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.assessments-intro-section-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.assessments-intro-section-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.assessments-intro-section-text h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.assessments-intro-section-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.assessments-intro-section-image {
+    flex: 1; /* Ensures the image takes up equal space */
+    display: flex;
+    justify-content: center;
+    max-width: 500px; /* Limits the maximum width of the image */
+}
+
+.assessments-intro-section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional for rounded corners */
+    object-fit: cover; /* Ensures the image doesn't distort */
+    max-height: 450px; /* Prevents the image from being too tall */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a polished look */
+}
+
+/* =====================================
+   ASSESSMENTS EVALUATION PROCESS SECTION
+===================================== */
+.assessments-evaluation-process-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.assessments-evaluation-process-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.assessments-evaluation-process-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.evaluation-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.evaluation-step {
+    text-align: center;
+    max-width: 200px;
+}
+
+.evaluation-step img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.evaluation-step p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* =====================================
+   ASSESSMENTS CONCLUSION SECTION
+===================================== */
+.assessments-conclusion-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+}
+
+.assessments-conclusion-section-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.assessments-conclusion-section-image img {
+    max-width: 100%; /* Ensures the image scales proportionally */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 300px; /* Restricts the image height to prevent it from taking up too much vertical space */
+    border-radius: 10px; /* Adds rounded corners */
+    object-fit: cover; /* Ensures the image looks good within its defined dimensions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for polish */
+}
+
+.assessments-conclusion-section-text {
+    flex: 1;
+}
+
+.assessments-conclusion-section-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.assessments-conclusion-section-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Contact Page */
 
 /* =====================================
    CONTACT PAGE HEADER SECTION
@@ -982,6 +1142,8 @@ footer {
     .expertise-item {
         flex: 1 1 100%;
     }
+
+    /* consults page */
     .clinical-consultations-section {
         flex-direction: column;
         text-align: center;
@@ -998,5 +1160,16 @@ footer {
 
     .clinical-consultations-image img {
         max-width: 100%;
+    }
+
+    /* assessments page */
+    .assessments-intro-section-content,
+    .assessments-conclusion-section-content {
+        flex-direction: column;
+    }
+
+    .evaluation-process-steps {
+        flex-direction: column;
+        gap: 20px;
     }
 }
