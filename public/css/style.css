@@ -362,7 +362,9 @@ footer {
 
 .home-expertise {
     padding: 60px 40px;
-    background-color: #C8D4CA;
+    /* background-color: #C8D4CA;
+    background-color: #f0f4f1;
+    background-color: #e3ebe7; */
     text-align: center;
 }
 
@@ -725,7 +727,7 @@ footer {
     color: #0056b3;
 }
 
-/* Consults Page */
+/* Clinical Consultation Page */
 
 /* =====================================
    CONSULTS PAGE HEADER SECTION
@@ -800,6 +802,8 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Psychoeducational Assessments Page */
 
 /* =====================================
    ASSESSMENTS HEADER SECTION
@@ -959,6 +963,113 @@ footer {
     font-size: 1.2em;
     line-height: 1.6;
     color: #555;
+}
+
+/* Solution-Focused Therapy Page */
+
+/* =====================================
+   THERAPY HEADER SECTION
+===================================== */
+.therapy-header {
+    background-image: url('/images/therapy-header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.therapy-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* =====================================
+   THERAPY INTRODUCTION SECTION
+===================================== */
+.therapy-intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+}
+
+.therapy-intro-section-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.therapy-intro-section-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.therapy-intro-section-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.therapy-intro-section-text h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.therapy-intro-section-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.therapy-intro-section-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.therapy-intro-section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================================
+   THERAPY PROCESS SECTION
+===================================== */
+.therapy-process-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.therapy-process-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.therapy-process-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.therapy-process-section-image {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.therapy-process-section-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Page */
