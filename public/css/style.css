@@ -105,6 +105,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
+    padding: 15px 0px;
 }
 
 nav ul {
@@ -121,11 +122,16 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
     font-weight: 500;
     letter-spacing: 1px;
     transition: color 0.3s;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 5px 10px;
+    display: inline-flex; /* Ensures the text and icon are treated as a single unit */
+    align-items: center; /* Vertically centers the items */
+    text-decoration: none;
+    color: #333;
 }
 
 /* Default nav menu */
@@ -188,6 +194,15 @@ nav ul li a {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Dropdown Icon Styling */
+.dropdown-icon {
+    width: 20px; /* Adjust the size of the icon */
+    height: 20px;
+    margin-left: 5px; /* Add spacing between the text and the icon */
+    margin-right: -15px;
+    display: inline-block;
 }
 
 /* Appointment Button Area */
