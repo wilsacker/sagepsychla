@@ -1,3 +1,12 @@
+const burgerMenu = document.querySelector('.burger-menu');
+const navMenu = document.querySelector('.nav-menu');
+
+// Toggle the nav menu and burger menu
+burgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active'); // Toggle nav menu visibility
+    burgerMenu.classList.toggle('active'); // Optionally toggle styling for active state
+});
+
 // Smooth scrolling for in-page anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -13,10 +22,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.getElementById('logo-title-button').addEventListener('click', (e) => {
     e.preventDefault();
     if (window.location.pathname === '/') {
-        // Scroll to top if already on home page
         window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-        // Navigate to home page if not on home page
         window.location.href = '/';
     }
 });

@@ -58,6 +58,7 @@ header {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 1em;
+    position: relative;
 }
 
 /* Logo & Title Button with Unified Hover Effect */
@@ -68,23 +69,23 @@ header {
     text-decoration: none; /* Remove any link styling if applied */
     color: inherit; /* Ensure it inherits color */
     transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+    margin-right: auto;
 }
 
 #logo-title-button:hover {
     transform: scale(1.05); /* Slightly increase size on hover */
-    color: #e74c3c; /* Change color on hover */
 }
 
 /* Logo Image inside the Button */
 .logo-img {
-    width: 40px; /* Adjust as needed for logo size */
-    height: 40px; /* Adjust as needed for logo size */
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
-    transition: transform 0.3s ease; /* Add smooth transition */
+    transition: transform 0.3s ease;
 }
 
 #logo-title-button:hover .logo-img {
-    transform: scale(1.1); /* Apply scale to the logo when #logo-title-button is hovered */
+    transform: scale(1.1);
 }
 
 /* Title Text */
@@ -94,7 +95,7 @@ header {
     font-weight: bold;
     letter-spacing: 0.5px;
     color: #333;
-    text-decoration: none; /* Ensures no underline or link styling */
+    text-decoration: none;
 }
 
 /* Navigation */
@@ -102,12 +103,16 @@ nav {
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 40px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 nav ul li {
@@ -124,6 +129,55 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #e74c3c;
+}
+
+/* Centered Nav Menu */
+.nav-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+/* Links */
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #e74c3c;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none; /* Hidden by default on larger screens */
+    position: relative;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Hide burger menu when nav menu is active */
+.nav-menu.active + .burger-menu {
+    display: none; /* Hide the burger menu when nav menu is visible */
 }
 
 /* Services Dropdown */
@@ -160,10 +214,11 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Nav-Specific Request Appointment Button Styles */
+/* Fix Request Appointment Button Layout */
 .nav-appointment-button {
-    margin-right: 20px;
-    margin-left: 80px;
+    margin-left: auto; /* Aligns to the right */
+    margin-right: 0; /* Removes extra spacing */
+    padding: 10px 10px;
 }
 
 /* ==================================================
@@ -1287,6 +1342,45 @@ footer {
 ================================================== */
 
 @media (max-width: 768px) {
+    /* Shrink site name */
+    #logo-title-button h1 {
+        font-size: 1.2em;
+    }
+
+    /* Show burger menu */
+    .burger-menu {
+        display: flex; /* Display the burger menu on smaller screens */
+        flex-direction: column; /* Stack spans vertically */
+        justify-content: space-between;
+        width: 25px; /* Set width of the burger menu */
+        height: 20px; /* Adjust height */
+    }
+    
+    /* Nav menu hidden by default */
+    .nav-menu {
+        display: none; /* Keep nav menu hidden initially */
+    }
+
+    /* Nav menu active and displayed */
+    .nav-menu.active {
+        display: flex; /* Display nav menu when active */
+        flex-direction: column; /* Stack items */
+        position: absolute;
+        top: 100%; /* Position below the header */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Ensure above content but below burger */
+    }
+
+    /* Adjust appointment button */
+    .nav-appointment-button {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+    
     /* Hero Adjustments */
     .hero {
         height: 50vh;
