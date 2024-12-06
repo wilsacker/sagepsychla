@@ -1102,7 +1102,9 @@ footer {
     color: #f9f9f9;
 }
 
-/* Main Contact Section */
+/* ========================
+   Main Contact Section
+======================== */
 .contact-section {
     display: flex;
     justify-content: space-between;
@@ -1110,6 +1112,74 @@ footer {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
+}
+
+/* =====================================
+   Request Appointment Section
+===================================== */
+.request-appointment-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto 40px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-appointment-content {
+    display: flex;
+    flex-direction: row-reverse; /* Flip the order */
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.request-appointment-text {
+    flex: 1;
+    text-align: center;
+}
+
+.request-appointment-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.request-appointment-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.request-appointment-image {
+    flex: 1;
+    text-align: center;
+}
+
+.request-appointment-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.btn-request-appointment {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-request-appointment:hover {
+    background-color: #0056b3;
 }
 
 /* Contact Form */
