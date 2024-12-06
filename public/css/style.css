@@ -54,7 +54,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
+    flex-wrap: wrap;
+    padding: 20px 40px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 1em;
@@ -69,7 +70,7 @@ header {
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s ease, color 0.3s ease;
-    margin-right: 10px;
+    margin-right: auto;
     max-width: 33%; /* Limits its width */
 }
 
@@ -208,16 +209,13 @@ nav ul li a {
 /* Appointment Button Area */
 
 .nav-appointment-button {
+    font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
+    padding: 8px 16px;
+    max-width: 100%; /* Prevent overflowing */
     margin-left: auto; /* Aligns to the right */
     margin-right: auto; /* Removes extra spacing */
-    padding: 10px 10px;
-}
-
-/* Media Query for Large Screens */
-@media (min-width: 1400px) {
-    .nav-appointment-button {
-        margin-left: 100px; /* Add 150px margin on the left for larger screens */
-    }
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+    text-align: center;
 }
 
 /* ==================================================
@@ -421,6 +419,8 @@ footer {
     background-color: #f0f4f1;
     background-color: #e3ebe7; */
     text-align: center;
+    justify-content: center; /* Center the cards */
+    gap: 30px; /* Reduce gap slightly for better spacing */
 }
 
 .home-expertise h2 {
@@ -444,7 +444,9 @@ footer {
 }
 
 .home-expertise-item {
-    flex: 0 1 45%;
+    flex: 1 1 calc(33.333% - 30px); /* 3 cards per row, minus gap */
+    max-width: 300px; /* Limit the maximum width */
+    min-width: 240px; /* Ensure a reasonable minimum width */
     background-color: white;
     padding: 20px;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -452,7 +454,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    border-radius: 8px;
 }
 
 .home-expertise-item img {
@@ -738,7 +740,9 @@ footer {
 }
 
 .services-expertise-item {
-    flex: 0 1 45%;
+    flex: 1 1 calc(33.333% - 30px); /* 3 cards per row, minus gap */
+    max-width: 300px; /* Limit the maximum width */
+    min-width: 240px; /* Ensure a reasonable minimum width */
     background-color: white;
     padding: 20px;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -746,7 +750,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    border-radius: 8px;
 }
 
 .services-expertise-item img {
@@ -1337,14 +1341,36 @@ footer {
 }
 
 /* ==================================================
-   RESPONSIVE DESIGN (MOBILE)
+   RESPONSIVE DESIGN (MOBILE, LAPTOP, DESKTOP)
 ================================================== */
+
+@media (max-width: 1400px) {
+
+    #logo-title-button h1 {
+        font-size: 0.7em;
+    }
+
+    .nav-appointment-button {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        max-width: 70%;
+        font-size: 0.9em; /* Match text size with nav items */
+        padding: 8px 16px; /* Adjust padding for consistency */
+    }
+}
 
 @media (max-width: 768px) {
     /* Shrink site name */
     #logo-title-button h1 {
-        font-size: 1.2em;
+        font-size: 0.7em;
     }
+
+    #logo-title-button img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }    
 
     /* Show burger menu */
     .burger-menu {
@@ -1379,6 +1405,8 @@ footer {
         margin: 10px auto;
         text-align: center;
         max-width: 70%;
+        font-size: 0.8em; /* Reduce text size further for smaller screens */
+        padding: 6px 12px; /* Tighter padding */
     }
     
     /* Hero Adjustments */
@@ -1413,10 +1441,21 @@ footer {
     .expertise-content {
         flex-direction: column;
         align-items: center;
+        padding: 20px; /* Adjust padding for mobile view */
     }
 
     .expertise-item {
-        flex: 1 1 100%;
+        flex: 0 1 auto;
+        min-width: 320px;
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    .home-expertise {
+        padding: 40px 20px; /* Adjust padding to accommodate small screens */
     }
 
     /* consults page */
@@ -1447,5 +1486,12 @@ footer {
     .evaluation-process-steps {
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+/* Media Query for Large Screens */
+@media (min-width: 1400px) {
+    .nav-appointment-button {
+        margin-left: 100px; /* Add 150px margin on the left for larger screens */
     }
 }
