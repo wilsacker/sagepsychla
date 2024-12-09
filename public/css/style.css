@@ -1329,6 +1329,31 @@ footer {
     .nav-appointment-button {
         margin-left: 100px; /* Add 150px margin on the left for larger screens */
     }
+
+    .evaluation-process-steps {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .evaluation-step {
+        flex: 1 1 calc(33.33% - 30px); /* Three items per row */
+        max-width: calc(33.33% - 30px); /* Prevent wrapping due to max-width */
+        text-align: center;
+    }
+
+    .evaluation-step img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .evaluation-step p {
+        font-size: 1em;
+        line-height: 1.4;
+        color: #555;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -1358,12 +1383,13 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px; /* Adjust spacing for medium screens */
+        gap: 30px;
     }
 
     .evaluation-step {
-        flex: 1 1 30%; /* Show three items per row on larger screens */
-        max-width: 300px; /* Limit maximum width */
+        flex: 1 1 calc(45% - 30px); /* Two items per row */
+        max-width: calc(45% - 30px); /* Prevent wrapping due to max-width */
+        text-align: center;
     }
 
     .evaluation-step img {
@@ -1422,8 +1448,9 @@ footer {
     }
 
     .evaluation-step {
-        flex: 1 1 45%; /* Two items per row */
-        text-align: center; /* Center-align content for better readability */
+        flex: 1 1 calc(90% - 20px); /* Full width for smaller screens */
+        max-width: calc(90% - 20px);
+        text-align: center;
     }
 
     .evaluation-step img {
@@ -1433,6 +1460,7 @@ footer {
 
     .evaluation-step p {
         font-size: 0.95em;
+        line-height: 1.3;
     }
 }
 
