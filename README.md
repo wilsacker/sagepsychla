@@ -1,4 +1,6 @@
-# Sage Psychological Services Website
+# SagePsychLA Website
+
+Home of Sage Psychological Services
 
 ## About
 
