@@ -293,12 +293,12 @@ footer {
 }
 
 .contact-info div {
-    margin-bottom: 15px; /* Adjust the gap between clusters */
+    margin-bottom: 5px; /* Adjust the gap between clusters */
 }
 
 .contact-info p {
     margin: 6px 0;
-    font-size: 0.95em;
+    font-size: 1.1em;
     line-height: 1.6; /* Adjust line spacing for clarity */
     color: #555; /* Subtle color for text */
 }
@@ -317,7 +317,7 @@ footer {
 }
 
 .footer-availability-times p {
-    font-size: 0.9em;
+    font-size: 1em;
     margin: 4px 0;
     line-height: 1.4;
     color: #555;
@@ -1840,5 +1840,26 @@ footer {
     /* contact page */
     .availability-content div {
         max-width: 90%; /* Set a maximum width for the cards */
+    }
+
+    /* footer */
+    .footer-info {
+        max-width: 90%; /* Limit width to 90% of the screen */
+    }
+
+    .contact-info p {
+        font-size: 0.85em; /* Adjust font size for smaller screens */
+    }
+
+    .footer-logo img {
+        margin-bottom: 15px; /* Add a bit more space below the logo */
+    }
+
+    .appointment-times-item span {
+        display: block; /* Ensures each day and time is on a new line */
+    }
+
+    .appointment-times-item {
+        margin-bottom: 15px; /* Adds spacing between each cluster of information */
     }
 }
