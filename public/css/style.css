@@ -225,7 +225,7 @@ nav ul li a {
 footer {
     text-align: center;
     background-color: #f4f4f4;
-    padding: 30px 20px;
+    padding: 40px 20px;
     position: relative;
     width: 100%;
 }
@@ -282,12 +282,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-align: left; /* Align the text content to the left */
+    gap: 40px;
 }
 
 .footer-logo img {
-    width: 200px;
+    width: 170px;
     margin-bottom: 10px;
 }
 
@@ -296,9 +297,10 @@ footer {
 }
 
 .contact-info p {
-    margin: 8px 0;
-    font-size: 0.9em;
-    color: #777;
+    margin: 6px 0;
+    font-size: 0.95em;
+    line-height: 1.6; /* Adjust line spacing for clarity */
+    color: #555; /* Subtle color for text */
 }
 
 .contact-info a {
@@ -328,10 +330,23 @@ footer {
 }
 
 /* Copyright Section */
+.footer-credits {
+    margin-top: 20px; /* Separate from main footer info */
+}
+
 .footer-copy {
     font-size: 0.8em;
     color: #777;
-    margin-top: 20px;
+    margin: 5px 0; /* Add consistent spacing between items */
+}
+
+.footer-copy a {
+    color: #007bff; /* Match link color */
+    text-decoration: none;
+}
+
+.footer-copy a:hover {
+    text-decoration: underline;
 }
 
 /* ==================================================
@@ -1272,7 +1287,6 @@ footer {
     font-weight: bold;
     color: #333;
     margin-bottom: 40px;
-    font-family: "Roboto", sans-serif;
 }
 
 .availability-content {
@@ -1290,7 +1304,6 @@ footer {
     padding: 30px 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: "Georgia", serif;
     text-align: left;
 }
 
