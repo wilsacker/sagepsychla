@@ -310,6 +310,8 @@ footer {
     color: #777;
 }
 
+
+
 /* ==================================================
    PAGE SECTIONS
 ================================================== */
@@ -1211,7 +1213,6 @@ footer {
     color: #555; /* Match text color */
 }
 
-
 .request-appointment-image {
     flex: 1;
     text-align: center;
@@ -1236,6 +1237,58 @@ footer {
 
 .btn-request-appointment:hover {
     background-color: #0056b3;
+}
+
+/* Availability Section */
+.availability-section {
+    padding: 60px 20px; /* Add more padding to match other sections */
+    text-align: center;
+}
+
+.availability-section h2 {
+    font-size: 2.5em; /* Slightly larger for prominence */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px; /* Add spacing below heading */
+    text-transform: uppercase; /* Consistent with other headings */
+    font-family: "Roboto", sans-serif; /* Align font style with site */
+}
+
+.availability-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Reduce gap for tighter alignment */
+    max-width: 1200px; /* Limit section width for better focus */
+    margin: 0 auto; /* Center content */
+}
+
+.availability-content div {
+    flex: 1 1 calc(50% - 30px); /* Two items per row on larger screens */
+    background-color: #e6e6d4; /* Subtle green tone */
+    padding: 30px 20px;
+    border-radius: 12px; /* Slightly more rounded for softness */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for modern look */
+    font-family: "Georgia", serif; /* Keep elegance for text */
+    text-align: left; /* Align text for readability */
+}
+
+.availability-content h3 {
+    font-size: 1.8em; /* Increase font size for clarity */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.availability-content p {
+    font-size: 1.2em; /* Slightly larger for readability */
+    line-height: 1.8;
+    color: #555; /* Softer text color for better readability */
+}
+
+.availability-content em {
+    font-style: italic;
+    color: #333; /* Make emphasis text stand out */
 }
 
 /* Contact Form */
