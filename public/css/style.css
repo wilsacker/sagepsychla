@@ -1276,55 +1276,6 @@ footer {
     background-color: #0056b3;
 }
 
-/* Availability Section */
-.availability-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.availability-section h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-.availability-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.availability-content div {
-    flex: 1 1 calc(50% - 30px);
-    background-color: #e6e6d4; /* Subtle green tone */
-    padding: 30px 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.availability-content h3 {
-    font-size: 1.8em; /* Increase font size for clarity */
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.availability-content p {
-    font-size: 1.2em; /* Slightly larger for readability */
-    line-height: 1.8;
-    color: #555; /* Softer text color for better readability */
-}
-
-.availability-content em {
-    font-style: italic;
-    color: #333; /* Make emphasis text stand out */
-}
-
 /* Contact Form */
 .contact-form {
     flex: 1;
@@ -1422,6 +1373,205 @@ footer {
     border: none;
     border-radius: 8px;
     margin-top: 20px; /* Add margin to the top of the map */
+}
+
+/* Availability Section */
+.availability-section {
+    padding: 30px 20px 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.availability-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.availability-card ul li i {
+    color: #007bff; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.availability-card.online {
+    border-left: 5px solid #007bff; /* Highlight Online with blue */
+  }
+  
+.availability-card.in-person {
+    border-left: 5px solid #28a745; /* Highlight In-Person with green */
+}
+
+.availability-card h3 {
+    font-size: 1.5em; /* Slightly larger heading */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.availability-card ul li {
+    font-size: 1.1em; /* Larger font for readability */
+    line-height: 1.6;
+    color: #555;
+    margin: 8px 25px; /* Add spacing between list items */
+}
+  
+.availability-card ul li strong {
+    font-weight: bold; /* Emphasize key text */
+}
+  
+.availability-card ul li em {
+    font-style: italic; /* Subtle emphasis for time */
+}
+
+.availability-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.availability-content div {
+    flex: 1 1 calc(50% - 30px);
+    background-color: #ffffff; /* Subtle green tone */
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.availability-content h3 {
+    font-size: 1.8em; /* Increase font size for clarity */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.availability-content p {
+    font-size: 1.2em; /* Slightly larger for readability */
+    line-height: 1.8;
+    color: #555; /* Softer text color for better readability */
+}
+
+.availability-content em {
+    font-style: italic;
+    color: #333; /* Make emphasis text stand out */
+}
+
+/* Rates Section */
+.services-rates {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+}
+
+.services-rates h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.rates-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rate-card {
+    flex: 1 1 calc(33% - 30px);
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-left: 5px solid #007bff; /* Default border color */
+}
+
+.rate-card:nth-child(2) {
+    border-left-color: #28a745; /* Green for Parent Consultation */
+}
+
+.rate-card:nth-child(3) {
+    border-left-color: #ff5722; /* Orange for Family Psychotherapy */
+}
+
+.rate-card h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.rate-card h3 i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.rate-card:nth-child(2) h3 i {
+    color: #28a745; /* Icon color matches border */
+}
+
+.rate-card:nth-child(3) h3 i {
+    color: #ff5722;
+}
+
+.rate-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rate-card ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Bullet Icon Styling */
+.rate-card ul li i {
+    color: #007bff; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.rate-card:nth-child(2) ul li i {
+    color: #28a745; /* Green icons for Parent Consultation */
+}
+
+.rate-card:nth-child(3) ul li i {
+    color: #ff5722; /* Orange icons for Family Psychotherapy */
+}
+
+.rate-card ul li {
+    font-size: 1.1em; /* Larger font for readability */
+    line-height: 1.6;
+    margin: 8px 0; /* Add spacing between list items */
+    display: flex;
+    align-items: center; /* Align icon with text */
+}
+
+.rate-card p i {
+    color: #ff5722; /* Match Family Psychotherapy color */
+    margin-right: 10px;
+    vertical-align: middle; /* Align icon with text */
+}
+
+.rate-card ul li strong {
+    font-weight: bold;
+}
+
+.rate-card p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
 }
 
 /* ==================================================
