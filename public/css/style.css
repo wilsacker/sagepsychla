@@ -503,7 +503,7 @@ footer {
 
 .home-expertise-item {
     flex: 1 1 calc(33.333% - 30px); /* 3 cards per row, minus gap */
-    max-width: 300px; /* Limit the maximum width */
+    max-width: 400px; /* Limit the maximum width */
     min-width: 240px; /* Ensure a reasonable minimum width */
     background-color: white;
     padding: 20px;
@@ -528,7 +528,8 @@ footer {
 .home-expertise-item h3 {
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
     color: #333;
 }
 
@@ -536,6 +537,7 @@ footer {
     font-size: 1em;
     line-height: 1.5;
     color: #555;
+    margin: 8px;
 }
 
 .home-expertise-item a {
@@ -559,13 +561,14 @@ footer {
     font-weight: bold;
 }
 
-#consults h3 {
-    margin-bottom: 19.25px;
-    margin-top: 19.25px;
+#therapy h3 {
+    margin-top: 20px;
+    margin-bottom: 37px;
 }
 
-#consults p {
-    margin-bottom: 48px;
+#consults h3 {
+    margin-top: 20px;
+    margin-bottom: 37px;
 }
 
 .expertise-item p {
