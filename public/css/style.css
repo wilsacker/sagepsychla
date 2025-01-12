@@ -1197,6 +1197,7 @@ footer {
 .therapy-process-section-image {
     max-width: 600px;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .therapy-process-section-image img {
@@ -1495,6 +1496,7 @@ footer {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
+    position: relative;
 }
 
 .availability-content h3 {
@@ -1513,6 +1515,16 @@ footer {
 .availability-content em {
     font-style: italic;
     color: #333; /* Make emphasis text stand out */
+}
+
+#bev-hills {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0.9em; /* Reduce text size */
+    padding: 20px 25px; /* Add spacing around the text */
+    color: #555; /* Optional: Text color */
 }
 
 /* Rates Section */
