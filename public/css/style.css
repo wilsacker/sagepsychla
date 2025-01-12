@@ -207,17 +207,31 @@ nav ul li a {
 }
 
 /* Appointment Button Area */
-
 .nav-appointment-button {
-    font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
-    padding: 8px 16px;
-    max-width: 100%; /* Prevent overflowing */
-    margin-left: auto; /* Aligns to the right */
-    margin-right: auto; /* Removes extra spacing */
-    box-sizing: border-box; /* Ensure padding doesn’t affect width */
     text-align: center;
+    background-color: transparent; /* Remove background for the container */
 }
 
+.nav-appointment-button .appointment-button {
+    font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
+    padding: 8px 16px;
+    display: inline-block;
+    background-color: #6f9e61;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 10px #333;
+}
+
+.nav-appointment-button .appointment-button:hover {
+    background-color: #6f9e61;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px #333;
+    border-color: #6f9e61; /* Optional border highlight */
+}
 /* ==================================================
    FOOTER
 ================================================== */
@@ -393,7 +407,7 @@ footer {
 /* Call-To-Action Button in Hero */
 .cta-button {
     padding: 12px 24px;
-    background-color: #e74c3c;
+    background-color: #6f9e61;
     color: #fff;
     text-decoration: none;
     font-size: 1em;
@@ -401,10 +415,15 @@ footer {
     font-weight: bold;
     letter-spacing: 0.8px;
     transition: background-color 0.3s;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 10px #333;
 }
 
 .cta-button:hover {
-    background-color: #c0392b;
+    background-color: #6f9e61;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px #333;
 }
 
 /* =====================================
@@ -606,14 +625,21 @@ footer {
 
 .read-more-button {
     padding: 12px 24px;
-    background-color: #e74c3c;
-    color: white;
+    background-color: #618D9E;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     text-align: center;
     display: inline-block;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #618D9E;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px #333;
 }
 
 /* About Me Page */
