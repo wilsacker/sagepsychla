@@ -31,7 +31,7 @@ app.get('/assessments', (req, res) => {
 });
 
 app.get('/consults', (req, res) => {
-    res.render('pages/consults', { title: 'Clinical Consultation' });
+    res.render('pages/consults', { title: 'Parenting Consultations' });
 });
 
 app.get('/therapy', (req, res) => {
