@@ -80,8 +80,8 @@ header {
 
 /* Logo Image inside the Button */
 .logo-img {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     margin-right: 10px;
     transition: transform 0.3s ease;
 }
@@ -210,7 +210,7 @@ nav ul li a {
 .nav-appointment-button {
     text-align: center;
     background-color: transparent; /* Remove background for the container */
-    padding-left: 25px;
+    padding-left: 120px;
 }
 
 .nav-appointment-button .appointment-button {
