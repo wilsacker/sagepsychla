@@ -14,7 +14,7 @@ The site is fully responsive and optimized for both desktop and mobile views, en
 
 ## Usage
 
-Visit the live site at: [https://www.sagepsychologicalservices.com](https://www.sagepsychologicalservices.com)
+Visit the live site at: [https://www.sagepsychla.com](https://www.sagepsychla.com)
 
 - Navigate through the homepage to explore services.
 - Use the "Request an Appointment" button to schedule a session.
