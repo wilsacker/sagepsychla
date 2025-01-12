@@ -1003,6 +1003,7 @@ footer {
 .assessments-evaluation-process-section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    margin: 50px 50px 80px;
 }
 
 .assessments-evaluation-process-section p {
@@ -1349,7 +1350,7 @@ footer {
 
 .contact-form button {
     padding: 12px 24px;
-    background-color: #e74c3c;
+    background-color: #618D9E;
     color: white;
     font-weight: bold;
     border-radius: 5px;
@@ -1360,7 +1361,7 @@ footer {
 }
 
 .contact-form button:hover {
-    background-color: #c0392b;
+    background-color: #618D9E;
 }
 
 /* New Contact Info Section */
