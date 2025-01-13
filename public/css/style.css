@@ -361,6 +361,14 @@ footer {
     line-height: 1.4;
 }
 
+.footer-items {
+    text-indent: 20px;
+    display: inline-block; /* Ensures the margin applies properly */
+    margin-left: 20px; /* Adjust the indent size as needed */
+    text-decoration: none; /* Optional: Removes underline from the link */
+    color: #555; /* Optional: Customize the color */
+}
+
 /* Copyright Section */
 .footer-credits {
     margin-top: 20px; /* Separate from main footer info */
@@ -494,6 +502,7 @@ footer {
     /* background-color: #C8D4CA;
     background-color: #f0f4f1;
     background-color: #e3ebe7; */
+    background-color: #f4f4f4;
     text-align: center;
     justify-content: center; /* Center the cards */
     gap: 30px; /* Reduce gap slightly for better spacing */
@@ -926,6 +935,49 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* consults conclusion sections */
+.consults-conclusion-section-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
+    padding: 40px 20px; /* Adds consistent padding */
+    align-items: center; /* Vertically aligns the image and text */
+}
+
+.consults-conclusion-section-image {
+    flex: 1;
+}
+
+.consults-conclusion-section-image img {
+    max-width: 100%; /* Ensures the image scales proportionally */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 300px; /* Restricts the image height to prevent it from taking up too much vertical space */
+    border-radius: 10px; /* Adds rounded corners */
+    object-fit: cover; /* Ensures the image looks good within its defined dimensions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for polish */
+    margin: 0 auto; /* Centers the image within the container */
+}
+
+.consults-conclusion-section-text {
+    flex: 1;
+    padding: 20px; /* Adds padding around the text */
+}
+
+.consults-conclusion-section-text h2 {
+    font-size: 2em; /* Slightly smaller heading for balance */
+    margin-bottom: 20px; /* Adds space below the heading */
+    color: #333;
+    text-align: left; /* Aligns text to the left */
+}
+
+.consults-conclusion-section-text p {
+    font-size: 1.1em; /* Slightly smaller font size for readability */
+    line-height: 1.8; /* Increases line height for better spacing */
+    color: #555;
+    text-align: justify; /* Makes the text alignment cleaner */
+}
+
 /* Psychoeducational Assessments Page */
 
 /* =====================================
@@ -1131,7 +1183,7 @@ footer {
 
 .therapy-intro-section-content {
     display: flex;
-    gap: 40px;
+    gap: 80px;
     max-width: 1200px;
 }
 
@@ -1143,7 +1195,6 @@ footer {
 .therapy-intro-section-text h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #555;
 }
 
 .therapy-intro-section-text h3 {
@@ -1156,6 +1207,7 @@ footer {
     font-size: 1.2em;
     line-height: 1.6;
     color: #555;
+    margin-top: 40px;
     margin-bottom: 15px;
 }
 
@@ -1177,33 +1229,46 @@ footer {
 /* =====================================
    THERAPY PROCESS SECTION
 ===================================== */
+/* Therapy Process Section */
 .therapy-process-section {
     padding: 60px 40px;
-    text-align: center;
     background-color: #ffffff;
 }
 
-.therapy-process-section h2 {
+.therapy-process-content {
+    display: flex;
+    gap: 40px; /* Space between text and image */
+    align-items: center; /* Align text and image vertically */
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the section */
+}
+
+.therapy-process-text {
+    flex: 1; /* Make the text take up available space */
+    text-align: left; /* Align text to the left */
+}
+
+.therapy-process-text h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.therapy-process-section p {
+.therapy-process-text p {
     font-size: 1.2em;
-    margin-bottom: 40px;
+    line-height: 1.6;
     color: #555;
 }
 
 .therapy-process-section-image {
-    max-width: 600px;
-    margin: 0 auto;
-    padding-bottom: 40px;
+    flex: 1; /* Make the image take up available space */
+    max-width: 500px; /* Limit the size of the image */
 }
 
 .therapy-process-section-image img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensure the image scales properly */
 }
 
 /* Contact Page */
@@ -1451,11 +1516,11 @@ footer {
 }
 
 .availability-card.online {
-    border-left: 5px solid #007bff; /* Highlight Online with blue */
+    border-left: 5px solid #6f9e61; /* Highlight Online with blue */
   }
   
 .availability-card.in-person {
-    border-left: 5px solid #28a745; /* Highlight In-Person with green */
+    border-left: 5px solid #6f9e61; /* Highlight In-Person with green */
 }
 
 .availability-card h3 {
