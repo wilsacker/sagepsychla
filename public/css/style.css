@@ -233,6 +233,7 @@ nav ul li a {
     box-shadow: 0 2px 5px #333;
     border-color: #6f9e61; /* Optional border highlight */
 }
+
 /* ==================================================
    FOOTER
 ================================================== */
@@ -240,7 +241,6 @@ nav ul li a {
 footer {
     text-align: center;
     background-color: #f4f4f4;
-    padding: 40px 20px;
     position: relative;
     width: 100%;
 }
@@ -252,6 +252,7 @@ footer {
     justify-content: space-between;
     background-color: #ffffff;
     padding: 20px;
+    margin: 40px;
     border-radius: 8px;
     margin-bottom: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -310,78 +311,78 @@ footer {
     border-color: #6f9e61; /* Optional border highlight */
 }
 
+/* Footer Info Section */
+.footer-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-top: 2px solid #e0e0e0;
+}
+
 .footer-info {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    text-align: left; /* Align the text content to the left */
-    gap: 40px;
 }
 
-.footer-logo img {
-    width: 170px;
-    margin-bottom: 10px;
+.footer-card {
+    flex: 1 1 100%;
+    min-width: 400px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Ensures cards stretch evenly */
 }
 
-.contact-info div {
-    margin-bottom: 5px; /* Adjust the gap between clusters */
+.footer-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1400px;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 
-.contact-info p {
-    margin: 6px 0;
-    font-size: 1.1em;
-    line-height: 1.6; /* Adjust line spacing for clarity */
-    color: #555; /* Subtle color for text */
-}
-
-.contact-info a {
+.footer-card p {
+    margin: 10px 0;
     color: #333;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.footer-availability {
-    margin-top: 10px;
-}
-
-.footer-availability-times p {
     font-size: 1em;
-    margin: 4px 0;
-    line-height: 1.4;
-    color: #555;
 }
 
-.appointment-times-item {
-    text-indent: 20px; /* Optional: Add a small indent for the text */
-    font-size: 0.9em; /* Keep consistent with the other text */
-    line-height: 1.4;
+.footer-card ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.footer-card li {
+    margin: 5px 0;
+    line-height: 1.5;
 }
 
 .footer-items {
-    text-indent: 20px;
-    display: inline-block; /* Ensures the margin applies properly */
-    margin-left: 20px; /* Adjust the indent size as needed */
-    text-decoration: none; /* Optional: Removes underline from the link */
-    color: #555; /* Optional: Customize the color */
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-items:hover {
+    text-decoration: underline;
 }
 
 /* Copyright Section */
 .footer-credits {
-    margin-top: 20px; /* Separate from main footer info */
+    margin-top: 30px;
+    text-align: center;
 }
 
 .footer-copy {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #777;
-    margin: 5px 0; /* Add consistent spacing between items */
+    margin: 5px 0;
 }
 
 .footer-copy a {
-    color: #007bff; /* Match link color */
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -1904,11 +1905,6 @@ footer {
     .take-step-content p {
         font-size: 1em; /* Reduce paragraph font size */
     }
-
-    .footer-logo img {
-        width: 100px;
-        margin-bottom: 10px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -2126,7 +2122,7 @@ footer {
 
     /* footer */
     .footer-info {
-        max-width: 90%; /* Limit width to 90% of the screen */
+        margin: 40px; /* Limit width to 90% of the screen */
     }
 
     .contact-info p {
