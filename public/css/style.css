@@ -588,16 +588,6 @@ footer {
     font-weight: bold;
 }
 
-#therapy h3 {
-    margin-top: 20px;
-    margin-bottom: 37px;
-}
-
-#consults h3 {
-    margin-top: 20px;
-    margin-bottom: 37px;
-}
-
 .expertise-item p {
     font-size: 1em;
     line-height: 1.5;
@@ -1011,24 +1001,22 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 40px;
+    padding: 60px clamp(20px, 10vw, 300px); 
     background-color: #f9f9f9;
 }
 
 .assessments-intro-section-content {
     display: flex;
     gap: 40px;
-    max-width: 1200px;
 }
 
 .assessments-intro-section-text {
     flex: 1;
-    max-width: 600px;
 }
 
 .assessments-intro-section-text h2 {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: #555;
 }
 
@@ -1046,19 +1034,19 @@ footer {
 }
 
 .assessments-intro-section-image {
-    flex: 1; /* Ensures the image takes up equal space */
+    flex: 1;
     display: flex;
     justify-content: center;
-    max-width: 500px; /* Limits the maximum width of the image */
+    max-width: 500px;
 }
 
 .assessments-intro-section-image img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional for rounded corners */
-    object-fit: cover; /* Ensures the image doesn't distort */
-    max-height: 450px; /* Prevents the image from being too tall */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a polished look */
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* =====================================
