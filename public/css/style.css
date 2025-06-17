@@ -4,45 +4,45 @@
 
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body and Main Layout */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #333;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 .hidden-attribution {
-    display: none; /* Completely hides the element from view */
+  display: none; /* Completely hides the element from view */
 }
 
 /* Base button style */
 .appointment-button {
-    padding: 8px 20px;
-    border: 1px solid #333;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    letter-spacing: 0.8px;
-    border-radius: 4px;
-    display: inline-block; /* Ensures it behaves as a button */
-    transition: background-color 0.3s, color 0.3s;
+  padding: 8px 20px;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  border-radius: 4px;
+  display: inline-block; /* Ensures it behaves as a button */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Hover effect */
 .appointment-button:hover {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 
 /* ==================================================
@@ -51,185 +51,185 @@ main {
 
 /* Header */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 1em;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  position: relative;
 }
 
 /* Logo & Title Button with Unified Hover Effect */
 #logo-title-button {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease, color 0.3s ease;
-    margin-right: auto;
-    max-width: 33%; /* Limits its width */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-right: auto;
+  max-width: 33%; /* Limits its width */
 }
 
 #logo-title-button:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
 }
 
 /* Logo Image inside the Button */
 .logo-img {
-    width: 65px;
-    height: 65px;
-    transition: transform 0.3s ease;
+  width: 65px;
+  height: 65px;
+  transition: transform 0.3s ease;
 }
 
 #logo-title-button:hover .logo-img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Title Text */
 .logo h1 {
-    margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    color: #333;
-    text-decoration: none;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #333;
+  text-decoration: none;
 }
 
 /* Navigation */
 nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding: 15px 0px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 15px 0px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 nav ul li {
-    position: relative;
+  position: relative;
 }
 
 nav ul li a {
-    font-weight: 500px;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-    font-size: 1em;
-    line-height: 1.5;
-    padding: 5px 10px;
-    display: inline-flex; /* Ensures the text and icon are treated as a single unit */
-    align-items: center; /* Vertically centers the items */
-    text-decoration: none;
-    color: #333;
+  font-weight: 500px;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 5px 10px;
+  display: inline-flex; /* Ensures the text and icon are treated as a single unit */
+  align-items: center; /* Vertically centers the items */
+  text-decoration: none;
+  color: #333;
 }
 
 /* Default nav menu */
 .nav-menu {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 /* Burger Menu */
 .burger-menu {
-    display: none; /* Hidden by default on larger screens */
-    position: relative;
-    z-index: 1001;
-    cursor: pointer;
+  display: none; /* Hidden by default on larger screens */
+  position: relative;
+  z-index: 1001;
+  cursor: pointer;
 }
 
 .burger-menu span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #333;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 /* Hide burger menu when nav menu is active */
 .nav-menu.active + .burger-menu {
-    display: none; /* Hide the burger menu when nav menu is visible */
+  display: none; /* Hide the burger menu when nav menu is visible */
 }
 
 /* Services Dropdown */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropbtn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 /* Dropdown Icon Styling */
 .dropdown-icon {
-    width: 20px; /* Adjust the size of the icon */
-    height: 20px;
-    margin-left: 5px; /* Add spacing between the text and the icon */
-    margin-right: -15px;
-    display: inline-block;
+  width: 20px; /* Adjust the size of the icon */
+  height: 20px;
+  margin-left: 5px; /* Add spacing between the text and the icon */
+  margin-right: -15px;
+  display: inline-block;
 }
 
 /* Appointment Button Area */
 .nav-appointment-button {
-    text-align: center;
-    background-color: transparent; /* Remove background for the container */
-    padding-left: 120px;
+  text-align: center;
+  background-color: transparent; /* Remove background for the container */
+  padding-left: 120px;
 }
 
 .nav-appointment-button .appointment-button {
-    font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
-    padding: 8px 16px;
-    display: inline-block;
-    background-color: #6f9e61;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 4px 10px #333;
+  font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
+  padding: 8px 16px;
+  display: inline-block;
+  background-color: #6f9e61;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 10px #333;
 }
 
 .nav-appointment-button .appointment-button:hover {
-    background-color: #6f9e61;
-    color: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px #333;
-    border-color: #6f9e61; /* Optional border highlight */
+  background-color: #6f9e61;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px #333;
+  border-color: #6f9e61; /* Optional border highlight */
 }
 
 /* ==================================================
@@ -237,155 +237,155 @@ nav ul li a {
 ================================================== */
 
 footer {
-    text-align: center;
-    background-color: #f4f4f4;
-    position: relative;
-    width: 100%;
+  text-align: center;
+  background-color: #f4f4f4;
+  position: relative;
+  width: 100%;
 }
 
 .take-step-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 40px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .take-step-content {
-    flex: 2;
-    padding: 20px;
-    text-align: center;
+  flex: 2;
+  padding: 20px;
+  text-align: center;
 }
 
 .take-step-content h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .take-step-content p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    color: #555;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #555;
 }
 
 .take-step-image {
-    flex: 2;
-    max-width: 800px;
-    width: 100%;
-    margin-right: 20px;
+  flex: 2;
+  max-width: 800px;
+  width: 100%;
+  margin-right: 20px;
 }
 
 .take-step-image img {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 /* Footer-specific Request Appointment Button Styles */
 .footer-appointment-button {
-    font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
-    padding: 8px 16px;
-    display: inline-block;
-    background-color: #6f9e61;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 4px 10px #333;
+  font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
+  padding: 8px 16px;
+  display: inline-block;
+  background-color: #6f9e61;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 10px #333;
 }
 
 .footer-appointment-button:hover {
-    background-color: #6f9e61;
-    color: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px #333;
-    border-color: #6f9e61; /* Optional border highlight */
+  background-color: #6f9e61;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px #333;
+  border-color: #6f9e61; /* Optional border highlight */
 }
 
 /* Footer Info Section */
 .footer-section {
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-top: 2px solid #e0e0e0;
+  background-color: #ffffff;
+  padding: 20px;
+  border-top: 2px solid #e0e0e0;
 }
 
 .footer-info {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-card {
-    flex: 1 1 100%;
-    min-width: 400px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Ensures cards stretch evenly */
+  flex: 1 1 100%;
+  min-width: 400px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Ensures cards stretch evenly */
 }
 
 .footer-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1400px;
-    padding: 0 10px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1400px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .footer-card p {
-    margin: 10px 0;
-    color: #333;
-    font-size: 1em;
+  margin: 10px 0;
+  color: #333;
+  font-size: 1em;
 }
 
 .footer-card ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .footer-card li {
-    margin: 5px 0;
-    line-height: 1.5;
+  margin: 5px 0;
+  line-height: 1.5;
 }
 
 .footer-items {
-    color: #007bff;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
 }
 
 .footer-items:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Copyright Section */
 .footer-credits {
-    margin-top: 30px;
-    text-align: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .footer-copy {
-    font-size: 0.9em;
-    color: #777;
-    margin: 5px 0;
+  font-size: 0.9em;
+  color: #777;
+  margin: 5px 0;
 }
 
 .footer-copy a {
-    color: #007bff;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
 }
 
 .footer-copy a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* ==================================================
@@ -399,56 +399,56 @@ footer {
 ===================================== */
 
 .hero {
-    position: relative;
-    height: calc(100vh - 100px); /* Adjusts for header/footer */
-    background-image: url('/images/hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    padding: 0 20px; /* Add padding for mobile responsiveness */
+  position: relative;
+  height: calc(100vh - 100px); /* Adjusts for header/footer */
+  background-image: url("/images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px; /* Add padding for mobile responsiveness */
 }
 
 .hero h2 {
-    font-size: 3em;
-    font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: black;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
-    color: black;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  color: black;
 }
 
 /* Call-To-Action Button in Hero */
 .cta-button {
-    padding: 12px 24px;
-    background-color: #6f9e61;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em;
-    border-radius: 4px;
-    font-weight: bold;
-    letter-spacing: 0.8px;
-    transition: background-color 0.3s;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 4px 10px #333;
+  padding: 12px 24px;
+  background-color: #6f9e61;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  transition: background-color 0.3s;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 10px #333;
 }
 
 .cta-button:hover {
-    background-color: #6f9e61;
-    color: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px #333;
+  background-color: #6f9e61;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px #333;
 }
 
 /* =====================================
@@ -456,40 +456,40 @@ footer {
 ===================================== */
 
 .welcome {
-    display: flex;
-    align-items: center;
-    padding: 60px 40px;
-    background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #f7f7f7;
 }
 
 /* Welcome Content */
 .welcome-content {
-    flex: 1;
-    padding-right: 20px;
+  flex: 1;
+  padding-right: 20px;
 }
 
 .welcome-content h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .welcome-content p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-    font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  font-style: italic;
 }
 
 /* Welcome Image */
 .welcome-image {
-    flex: 1;
-    padding-left: 20px;
+  flex: 1;
+  padding-left: 20px;
 }
 
 .welcome-image img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* =====================================
@@ -497,100 +497,100 @@ footer {
 ===================================== */
 
 .home-expertise {
-    padding: 60px 40px;
-    /* background-color: #C8D4CA;
+  padding: 60px 40px;
+  /* background-color: #C8D4CA;
     background-color: #f0f4f1;
     background-color: #e3ebe7; */
-    background-color: #f4f4f4;
-    text-align: center;
-    justify-content: center; /* Center the cards */
-    gap: 30px; /* Reduce gap slightly for better spacing */
+  background-color: #f4f4f4;
+  text-align: center;
+  justify-content: center; /* Center the cards */
+  gap: 30px; /* Reduce gap slightly for better spacing */
 }
 
 .home-expertise h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 40px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .home-expertise h4 {
-    font-size: 1em;
-    font-weight: normal;
-    color: #888;
-    margin-top: 40px;
+  font-size: 1em;
+  font-weight: normal;
+  color: #888;
+  margin-top: 40px;
 }
 
 .home-expertise-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 }
 
 .home-expertise-item {
-    flex: 1 1 calc(33.333% - 30px); /* 3 cards per row, minus gap */
-    max-width: 400px; /* Limit the maximum width */
-    min-width: 240px; /* Ensure a reasonable minimum width */
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-    position: relative; /* Set the card container to relative */
-    padding-bottom: 60px; /* Add padding to make space for the button */
+  flex: 1 1 calc(33.333% - 30px); /* 3 cards per row, minus gap */
+  max-width: 400px; /* Limit the maximum width */
+  min-width: 240px; /* Ensure a reasonable minimum width */
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  position: relative; /* Set the card container to relative */
+  padding-bottom: 60px; /* Add padding to make space for the button */
 }
 
 .home-expertise-item img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px 8px 8px 8px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 8px 8px;
+  margin-bottom: 15px;
 }
 
 .home-expertise-item h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 10px;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .home-expertise-item p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #555;
-    margin: 8px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+  margin: 8px;
 }
 
 .home-expertise-item a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: color 0.3s;
 }
 
 .home-expertise-item a:hover {
-    color: #0056b3;
+  color: #0056b3;
 }
 
 .learn-more-button {
-    position: absolute; /* Position the button absolutely */
-    bottom: 20px; /* Attach to the bottom of the card */
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-weight: bold;
+  position: absolute; /* Position the button absolutely */
+  bottom: 20px; /* Attach to the bottom of the card */
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .expertise-item p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #555;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
 }
 
 /* =====================================
@@ -598,67 +598,67 @@ footer {
 ===================================== */
 
 .home-about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 40px;
-    background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  background-color: #f7f7f7;
 }
 
 .home-about-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
 }
 
 .home-about-image {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 .home-about-image img {
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .home-about-text {
-    flex: 1;
-    max-width: 700px;
+  flex: 1;
+  max-width: 700px;
 }
 
 .home-about-text h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .home-about-text p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .read-more-button {
-    padding: 12px 24px;
-    background-color: #618D9E;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-    display: inline-block;
-    transition: all 0.3s ease;
+  padding: 12px 24px;
+  background-color: #618d9e;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .read-more-button:hover {
-    background-color: #618D9E;
-    color: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px #333;
+  background-color: #618d9e;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px #333;
 }
 
 /* About Me Page */
@@ -668,28 +668,28 @@ footer {
 ===================================== */
 
 .about {
-    padding: 60px 40px;
-    background-color: #f9f9f9;
-    text-align: center;
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 .about-header {
-    background-image: url('/images/about-page.jpg');
-    background-size: cover;
-    background-position: center 15%;
-    background-repeat: no-repeat;
-    width: 100%; /* Full width */
-    padding: 150px 0; /* Adjust padding as needed for header height */
-    text-align: center;
-    color: white; /* Change text color as needed */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
+  background-image: url("/images/about-page.jpg");
+  background-size: cover;
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  width: 100%; /* Full width */
+  padding: 150px 0; /* Adjust padding as needed for header height */
+  text-align: center;
+  color: white; /* Change text color as needed */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .about-header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #f9f9f9;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f9f9f9;
 }
 
 /* =====================================
@@ -697,44 +697,44 @@ footer {
 ===================================== */
 
 .about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-    margin: 50px auto;
-    max-width: 1600px;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  margin: 50px auto;
+  max-width: 1600px;
+  padding: 0 20px;
 }
 
 .about-image {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .about-image img {
-    width: 450px;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 70px;
+  width: 450px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 70px;
 }
 
 .about-text {
-    flex: 1;
-    max-width: 800px;
+  flex: 1;
+  max-width: 800px;
 }
 
 .about-text h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .about-text p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    padding-bottom: 15px;
-    color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+  padding-bottom: 15px;
+  color: #555;
 }
 
 /* Services Page */
@@ -744,29 +744,29 @@ footer {
 ===================================== */
 
 .services {
-    padding: 60px 40px;
-    background-color: #f9f9f9;
-    text-align: center;
-    font-family: "Prompt";
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: "Prompt";
 }
 
 .services-header {
-    background-image: url('/images/services-page.jpg');
-    background-size: cover;
-    background-position: center 15%;
-    background-repeat: no-repeat;
-    width: 100%; /* Full width */
-    padding: 150px 0; /* Adjust padding as needed for header height */
-    text-align: center;
-    color: white; /* Change text color as needed */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
+  background-image: url("/images/services-page.jpg");
+  background-size: cover;
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  width: 100%; /* Full width */
+  padding: 150px 0; /* Adjust padding as needed for header height */
+  text-align: center;
+  color: white; /* Change text color as needed */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .services-header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #f9f9f9;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f9f9f9;
 }
 
 /* =====================================
@@ -774,78 +774,78 @@ footer {
 ===================================== */
 
 .services-expertise {
-    padding: 60px 40px;
-    background-color: #ffffff;
-    text-align: center;
+  padding: 60px 40px;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .services-expertise h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 40px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .services-expertise h4 {
-    font-size: 1em;
-    font-weight: normal;
-    color: #888;
-    margin-top: 40px;
+  font-size: 1em;
+  font-weight: normal;
+  color: #888;
+  margin-top: 40px;
 }
 
 .services-expertise-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 }
 
 .services-expertise-item {
-    flex: 1 1 calc(33.333% - 30px); /* 3 cards per row, minus gap */
-    max-width: 300px; /* Limit the maximum width */
-    min-width: 240px; /* Ensure a reasonable minimum width */
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-    position: relative; /* Set the card container to relative */
-    padding-bottom: 60px; /* Add padding to make space for the button */
+  flex: 1 1 calc(33.333% - 30px); /* 3 cards per row, minus gap */
+  max-width: 300px; /* Limit the maximum width */
+  min-width: 240px; /* Ensure a reasonable minimum width */
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  position: relative; /* Set the card container to relative */
+  padding-bottom: 60px; /* Add padding to make space for the button */
 }
 
 .services-expertise-item img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px 8px 8px 8px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 8px 8px;
+  margin-bottom: 15px;
 }
 
 .services-expertise-item h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .services-expertise-item p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #555;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
 }
 
 .services-expertise-item a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: color 0.3s;
 }
 
 .services-expertise-item a:hover {
-    color: #0056b3;
+  color: #0056b3;
 }
 
 /* Clinical Consultation Page */
@@ -855,116 +855,116 @@ footer {
 ===================================== */
 
 .consults-header {
-    background-image: url('/images/consults-header.jpg'); /* Use service-specific image */
-    background-size: cover;
-    background-position: center 40%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background-image: url("/images/consults-header.jpg"); /* Use service-specific image */
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .consults-header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    margin: 0;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
 }
 
 /* =====================================
    CONSULTS PAGE CONTENT SECTION
 ===================================== */
 .consults-section {
-    padding: 60px 40px;
-    background-color: #f9f9f9;
+  padding: 60px 40px;
+  background-color: #f9f9f9;
 }
 
 .consults-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto; /* Center content within the page */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center content within the page */
 }
 
 .consults-description {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .consults-description h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .consults-description p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
 }
 
 .consults-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
 }
 
 .consults-image img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* consults conclusion sections */
 .consults-conclusion-section-content {
-    display: flex;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto; /* Centers the content */
-    padding: 40px 20px; /* Adds consistent padding */
-    align-items: center; /* Vertically aligns the image and text */
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the content */
+  padding: 40px 20px; /* Adds consistent padding */
+  align-items: center; /* Vertically aligns the image and text */
 }
 
 .consults-conclusion-section-image {
-    flex: 1;
+  flex: 1;
 }
 
 .consults-conclusion-section-image img {
-    max-width: 100%; /* Ensures the image scales proportionally */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 300px; /* Restricts the image height to prevent it from taking up too much vertical space */
-    border-radius: 10px; /* Adds rounded corners */
-    object-fit: cover; /* Ensures the image looks good within its defined dimensions */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for polish */
-    margin: 0 auto; /* Centers the image within the container */
+  max-width: 100%; /* Ensures the image scales proportionally */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 300px; /* Restricts the image height to prevent it from taking up too much vertical space */
+  border-radius: 10px; /* Adds rounded corners */
+  object-fit: cover; /* Ensures the image looks good within its defined dimensions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for polish */
+  margin: 0 auto; /* Centers the image within the container */
 }
 
 .consults-conclusion-section-text {
-    flex: 1;
-    padding: 20px; /* Adds padding around the text */
+  flex: 1;
+  padding: 20px; /* Adds padding around the text */
 }
 
 .consults-conclusion-section-text h2 {
-    font-size: 2em; /* Slightly smaller heading for balance */
-    margin-bottom: 20px; /* Adds space below the heading */
-    color: #333;
-    text-align: left; /* Aligns text to the left */
+  font-size: 2em; /* Slightly smaller heading for balance */
+  margin-bottom: 20px; /* Adds space below the heading */
+  color: #333;
+  text-align: left; /* Aligns text to the left */
 }
 
 .consults-conclusion-section-text p {
-    font-size: 1.1em; /* Slightly smaller font size for readability */
-    line-height: 1.8; /* Increases line height for better spacing */
-    color: #555;
-    text-align: justify; /* Makes the text alignment cleaner */
+  font-size: 1.1em; /* Slightly smaller font size for readability */
+  line-height: 1.8; /* Increases line height for better spacing */
+  color: #555;
+  text-align: justify; /* Makes the text alignment cleaner */
 }
 
 /* Psychoeducational Assessments Page */
@@ -973,168 +973,217 @@ footer {
    ASSESSMENTS HEADER SECTION
 ===================================== */
 .assessments-header {
-    background-image: url('/images/assessments-header.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%; /* Full width of the screen */
-    height: 50vh; /* Adjust height dynamically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    text-align: center;
-    color: white;
+  background-image: url("/images/assessments-header.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Full width of the screen */
+  height: 50vh; /* Adjust height dynamically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+  color: white;
 }
 
 .assessments-header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
 }
 
 /* =====================================
    ASSESSMENTS INTRODUCTION SECTION
 ===================================== */
 .assessments-intro-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px clamp(20px, 10vw, 300px); 
-    background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px clamp(20px, 10vw, 300px);
+  background-color: #f9f9f9;
 }
 
 .assessments-intro-section-content {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .assessments-intro-section-text {
-    flex: 1;
+  flex: 1;
 }
 
 .assessments-intro-section-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #555;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #555;
 }
 
 .assessments-intro-section-text h3 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 2rem;
+  margin: 30px;
+  text-align: center;
+  color: #555;
 }
 
 .assessments-intro-section-text p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 15px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
 }
 
 .assessments-intro-section-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    max-width: 500px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
 }
 
 .assessments-intro-section-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    max-height: 450px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Assessment Types Grid */
+.assessment-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .assessment-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .assessment-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.assessment-card-wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.assessment-card {
+  border-radius: 16px;
+  padding: 2rem;
+  background-color: #c8e0e4;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 320px;
+}
+
+.assessment-card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.assessment-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /* =====================================
    ASSESSMENTS EVALUATION PROCESS SECTION
 ===================================== */
 .assessments-evaluation-process-section {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff;
 }
 
 .assessments-evaluation-process-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    margin: 50px 50px 80px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  margin: 50px 50px 80px;
 }
 
 .assessments-evaluation-process-section p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    color: #555;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #555;
 }
 
 .evaluation-process-steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .evaluation-step {
-    flex: 1 1 30%; /* Allow items to wrap evenly across rows */
-    min-width: 220px; /* Minimum width for small screens */
-    max-width: 300px; /* Maximum width for larger screens */
-    text-align: center;
+  flex: 1 1 30%; /* Allow items to wrap evenly across rows */
+  min-width: 220px; /* Minimum width for small screens */
+  max-width: 300px; /* Maximum width for larger screens */
+  text-align: center;
 }
 
 .evaluation-step img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
 .evaluation-step p {
-    font-size: 1em;
-    color: #555;
+  font-size: 1em;
+  color: #555;
 }
 
 /* =====================================
    ASSESSMENTS CONCLUSION SECTION
 ===================================== */
 .assessments-conclusion-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 40px;
-    background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #f9f9f9;
 }
 
 .assessments-conclusion-section-content {
-    display: flex;
-    gap: 40px;
-    max-width: 1200px;
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
 }
 
 .assessments-conclusion-section-image img {
-    max-width: 100%; /* Ensures the image scales proportionally */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 300px; /* Restricts the image height to prevent it from taking up too much vertical space */
-    border-radius: 10px; /* Adds rounded corners */
-    object-fit: cover; /* Ensures the image looks good within its defined dimensions */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for polish */
+  max-width: 100%; /* Ensures the image scales proportionally */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 300px; /* Restricts the image height to prevent it from taking up too much vertical space */
+  border-radius: 10px; /* Adds rounded corners */
+  object-fit: cover; /* Ensures the image looks good within its defined dimensions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for polish */
 }
 
 .assessments-conclusion-section-text {
-    flex: 1;
+  flex: 1;
 }
 
 .assessments-conclusion-section-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    color: #333;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .assessments-conclusion-section-text p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
-    margin: 8px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+  margin: 8px;
 }
 
 /* Solution-Focused Therapy Page */
@@ -1143,74 +1192,74 @@ footer {
    THERAPY HEADER SECTION
 ===================================== */
 .therapy-header {
-    background-image: url('/images/therapy-header.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 150px 0;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  background-image: url("/images/therapy-header.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .therapy-header h1 {
-    font-size: 3em;
-    font-weight: bold;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 /* =====================================
    THERAPY INTRODUCTION SECTION
 ===================================== */
 .therapy-intro-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 40px;
-    background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #f9f9f9;
 }
 
 .therapy-intro-section-content {
-    display: flex;
-    gap: 80px;
-    max-width: 1200px;
+  display: flex;
+  gap: 80px;
+  max-width: 1200px;
 }
 
 .therapy-intro-section-text {
-    flex: 1;
-    max-width: 600px;
+  flex: 1;
+  max-width: 600px;
 }
 
 .therapy-intro-section-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
 .therapy-intro-section-text h3 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .therapy-intro-section-text p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
-    margin-top: 40px;
-    margin-bottom: 15px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 .therapy-intro-section-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    max-width: 500px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
 }
 
 .therapy-intro-section-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* =====================================
@@ -1218,44 +1267,44 @@ footer {
 ===================================== */
 /* Therapy Process Section */
 .therapy-process-section {
-    padding: 60px 40px;
-    background-color: #ffffff;
+  padding: 60px 40px;
+  background-color: #ffffff;
 }
 
 .therapy-process-content {
-    display: flex;
-    gap: 40px; /* Space between text and image */
-    align-items: center; /* Align text and image vertically */
-    max-width: 1200px; /* Limit the width of the content */
-    margin: 0 auto; /* Center the section */
+  display: flex;
+  gap: 40px; /* Space between text and image */
+  align-items: center; /* Align text and image vertically */
+  max-width: 1200px; /* Limit the width of the content */
+  margin: 0 auto; /* Center the section */
 }
 
 .therapy-process-text {
-    flex: 1; /* Make the text take up available space */
-    text-align: left; /* Align text to the left */
+  flex: 1; /* Make the text take up available space */
+  text-align: left; /* Align text to the left */
 }
 
 .therapy-process-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .therapy-process-text p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
 }
 
 .therapy-process-section-image {
-    flex: 1; /* Make the image take up available space */
-    max-width: 500px; /* Limit the size of the image */
+  flex: 1; /* Make the image take up available space */
+  max-width: 500px; /* Limit the size of the image */
 }
 
 .therapy-process-section-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Ensure the image scales properly */
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Ensure the image scales properly */
 }
 
 /* Contact Page */
@@ -1264,432 +1313,432 @@ footer {
    CONTACT PAGE HEADER SECTION
 ===================================== */
 .contact {
-    padding: 60px 40px;
-    background-color: #f9f9f9;
-    text-align: center;
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 .contact-header {
-    background-image: url('/images/contact-page.jpeg');
-    background-size: cover;
-    background-position: center 15%;
-    background-repeat: no-repeat;
-    width: 100%; /* Full width */
-    padding: 150px 0; /* Adjust padding as needed for header height */
-    text-align: center;
-    color: white; /* Change text color as needed */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
+  background-image: url("/images/contact-page.jpeg");
+  background-size: cover;
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  width: 100%; /* Full width */
+  padding: 150px 0; /* Adjust padding as needed for header height */
+  text-align: center;
+  color: white; /* Change text color as needed */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .contact-header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #f9f9f9;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f9f9f9;
 }
 
 /* ========================
    Main Contact Section
 ======================== */
 .contact-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 /* =====================================
    Request Appointment Section
 ===================================== */
 .request-appointment-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; /* Center-align the content */
-    background-color: #ffffff;
-    padding: 50px; /* Add consistent padding */
-    border-radius: 10px; /* Rounded corners */
-    margin: 40px auto; /* Center the section on the page */
-    max-width: 1200px; /* Ensure it doesn’t stretch too wide */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* Center-align the content */
+  background-color: #ffffff;
+  padding: 50px; /* Add consistent padding */
+  border-radius: 10px; /* Rounded corners */
+  margin: 40px auto; /* Center the section on the page */
+  max-width: 1200px; /* Ensure it doesn’t stretch too wide */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .request-appointment-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space out text and image */
-    flex-wrap: wrap; /* Allow stacking on smaller screens */
-    width: 100%;
-    gap: 30px; /* Add spacing between text and image */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out text and image */
+  flex-wrap: wrap; /* Allow stacking on smaller screens */
+  width: 100%;
+  gap: 30px; /* Add spacing between text and image */
 }
 
 .request-appointment-text {
-    flex: 1;
-    max-width: 50%; /* Limit text width to half */
-    text-align: center; /* Center-align text */
-    padding: 20px; /* Add internal padding */
+  flex: 1;
+  max-width: 50%; /* Limit text width to half */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Add internal padding */
 }
 
 .request-appointment-text h2 {
-    font-size: 2.5em; /* Match heading sizes */
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333; /* Match site’s text color */
+  font-size: 2.5em; /* Match heading sizes */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* Match site’s text color */
 }
 
 .request-appointment-text h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    color: #555; /* Subtle text color for subtitles */
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555; /* Subtle text color for subtitles */
 }
 
 .request-appointment-text p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #555; /* Match text color */
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555; /* Match text color */
 }
 
 .request-appointment-image {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 .request-appointment-image img {
-    max-width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .btn-request-appointment {
-    font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
-    padding: 8px 16px;
-    display: inline-block;
-    background-color: #6f9e61;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 4px 10px #333;
+  font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
+  padding: 8px 16px;
+  display: inline-block;
+  background-color: #6f9e61;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 10px #333;
 }
 
 .btn-request-appointment:hover {
-    background-color: #6f9e61;
-    color: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px #333;
-    border-color: #6f9e61; /* Optional border highlight */
+  background-color: #6f9e61;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px #333;
+  border-color: #6f9e61; /* Optional border highlight */
 }
 
 /* Contact Form */
 .contact-form {
-    flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .contact-form label {
-    display: block;
-    font-weight: bold;
-    margin: 10px 0 5px;
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .contact-form textarea {
-    resize: vertical;
-    height: 150px;
+  resize: vertical;
+  height: 150px;
 }
 
 .contact-form .checkbox-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-form .checkbox-group label {
-    display: inline-block;
-    margin-right: 15px;
+  display: inline-block;
+  margin-right: 15px;
 }
 
 .contact-form button {
-    padding: 12px 24px;
-    background-color: #618D9E;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s;
+  padding: 12px 24px;
+  background-color: #618d9e;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: #618D9E;
+  background-color: #618d9e;
 }
 
 /* New Contact Info Section */
 .new-contact-info {
-    flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block; /* Remove any flexbox behavior */
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block; /* Remove any flexbox behavior */
 }
 
 .new-contact-info h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .new-contact-info h3 {
-    font-size: 1em;
-    margin-bottom: 15px;
-    font-weight: lighter;
+  font-size: 1em;
+  margin-bottom: 15px;
+  font-weight: lighter;
 }
 
 .new-contact-info p {
-    font-size: 1.1em;
-    margin-bottom: 45px; /* Add margin to separate each line */
+  font-size: 1.1em;
+  margin-bottom: 45px; /* Add margin to separate each line */
 }
 
 .new-contact-info a {
-    color: #007bff;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
 }
 
 .new-contact-info a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Spacing for the map */
 .new-map iframe {
-    border: none;
-    border-radius: 8px;
-    margin-top: 20px; /* Add margin to the top of the map */
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px; /* Add margin to the top of the map */
 }
 
 /* Availability Section */
 .availability-section {
-    padding: 30px 20px 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
+  padding: 30px 20px 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
 }
 
 .availability-section h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
 }
 
 .availability-card ul li i {
-    color: #007bff; /* Icon color */
-    margin-right: 10px; /* Space between icon and text */
+  color: #007bff; /* Icon color */
+  margin-right: 10px; /* Space between icon and text */
 }
 
 .availability-card.online {
-    border-left: 5px solid #6f9e61; /* Highlight Online with blue */
-  }
-  
+  border-left: 5px solid #6f9e61; /* Highlight Online with blue */
+}
+
 .availability-card.in-person {
-    border-left: 5px solid #6f9e61; /* Highlight In-Person with green */
+  border-left: 5px solid #6f9e61; /* Highlight In-Person with green */
 }
 
 .availability-card h3 {
-    font-size: 1.5em; /* Slightly larger heading */
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.5em; /* Slightly larger heading */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 }
-  
+
 .availability-card ul li {
-    font-size: 1.1em; /* Larger font for readability */
-    line-height: 1.6;
-    color: #555;
-    margin: 8px 25px; /* Add spacing between list items */
+  font-size: 1.1em; /* Larger font for readability */
+  line-height: 1.6;
+  color: #555;
+  margin: 8px 25px; /* Add spacing between list items */
 }
-  
+
 .availability-card ul li strong {
-    font-weight: bold; /* Emphasize key text */
+  font-weight: bold; /* Emphasize key text */
 }
-  
+
 .availability-card ul li em {
-    font-style: italic; /* Subtle emphasis for time */
+  font-style: italic; /* Subtle emphasis for time */
 }
 
 .availability-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .availability-content div {
-    flex: 1 1 calc(50% - 30px);
-    background-color: #ffffff; /* Subtle green tone */
-    padding: 30px 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    position: relative;
+  flex: 1 1 calc(50% - 30px);
+  background-color: #ffffff; /* Subtle green tone */
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
 }
 
 .availability-content h3 {
-    font-size: 1.8em; /* Increase font size for clarity */
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.8em; /* Increase font size for clarity */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .availability-content p {
-    font-size: 1.2em; /* Slightly larger for readability */
-    line-height: 1.8;
-    color: #555; /* Softer text color for better readability */
+  font-size: 1.2em; /* Slightly larger for readability */
+  line-height: 1.8;
+  color: #555; /* Softer text color for better readability */
 }
 
 .availability-content em {
-    font-style: italic;
-    color: #333; /* Make emphasis text stand out */
+  font-style: italic;
+  color: #333; /* Make emphasis text stand out */
 }
 
 #bev-hills {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 0.9em; /* Reduce text size */
-    color: #555; /* Optional: Text color */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.9em; /* Reduce text size */
+  color: #555; /* Optional: Text color */
 }
 
 /* Rates Section */
 .services-rates {
-    padding: 30px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-    margin-top: 30px;
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin-top: 30px;
 }
 
 .services-rates h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
 }
 
 .rates-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .rate-card {
-    flex: 1 1 calc(33% - 30px);
-    background-color: #ffffff;
-    padding: 25px 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    border-left: 5px solid #007bff; /* Default border color */
+  flex: 1 1 calc(33% - 30px);
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border-left: 5px solid #007bff; /* Default border color */
 }
 
 .rate-card:nth-child(2) {
-    border-left-color: #28a745; /* Green for Parent Consultation */
+  border-left-color: #28a745; /* Green for Parent Consultation */
 }
 
 .rate-card:nth-child(3) {
-    border-left-color: #ff5722; /* Orange for Family Psychotherapy */
+  border-left-color: #ff5722; /* Orange for Family Psychotherapy */
 }
 
 .rate-card h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .rate-card h3 i {
-    margin-right: 10px;
-    color: #007bff;
+  margin-right: 10px;
+  color: #007bff;
 }
 
 .rate-card:nth-child(2) h3 i {
-    color: #28a745; /* Icon color matches border */
+  color: #28a745; /* Icon color matches border */
 }
 
 .rate-card:nth-child(3) h3 i {
-    color: #ff5722;
+  color: #ff5722;
 }
 
 .rate-card ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .rate-card ul li {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin: 8px 0;
-    color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 8px 0;
+  color: #555;
 }
 
 /* Bullet Icon Styling */
 .rate-card ul li i {
-    color: #007bff; /* Icon color */
-    margin-right: 10px; /* Space between icon and text */
+  color: #007bff; /* Icon color */
+  margin-right: 10px; /* Space between icon and text */
 }
 
 .rate-card:nth-child(2) ul li i {
-    color: #28a745; /* Green icons for Parent Consultation */
+  color: #28a745; /* Green icons for Parent Consultation */
 }
 
 .rate-card:nth-child(3) ul li i {
-    color: #ff5722; /* Orange icons for Family Psychotherapy */
+  color: #ff5722; /* Orange icons for Family Psychotherapy */
 }
 
 .rate-card ul li {
-    font-size: 1.1em; /* Larger font for readability */
-    line-height: 1.6;
-    margin: 8px 0; /* Add spacing between list items */
-    display: flex;
-    align-items: center; /* Align icon with text */
+  font-size: 1.1em; /* Larger font for readability */
+  line-height: 1.6;
+  margin: 8px 0; /* Add spacing between list items */
+  display: flex;
+  align-items: center; /* Align icon with text */
 }
 
 .rate-card p i {
-    color: #ff5722; /* Match Family Psychotherapy color */
-    margin-right: 10px;
-    vertical-align: middle; /* Align icon with text */
+  color: #ff5722; /* Match Family Psychotherapy color */
+  margin-right: 10px;
+  vertical-align: middle; /* Align icon with text */
 }
 
 .rate-card ul li strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .rate-card p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
 }
 
 /* ==================================================
@@ -1698,446 +1747,478 @@ footer {
 
 /* Media Query for Large Screens */
 @media (min-width: 1400px) {
-    .nav-appointment-button {
-        margin-left: 100px; /* Add 150px margin on the left for larger screens */
-    }
+  .nav-appointment-button {
+    margin-left: 100px; /* Add 150px margin on the left for larger screens */
+  }
 
-    .evaluation-process-steps {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
+  .evaluation-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 
-    .evaluation-step {
-        flex: 1 1 calc(33.33% - 30px); /* Three items per row */
-        max-width: calc(33.33% - 30px); /* Prevent wrapping due to max-width */
-        text-align: center;
-    }
+  .evaluation-step {
+    flex: 1 1 calc(33.33% - 30px); /* Three items per row */
+    max-width: calc(33.33% - 30px); /* Prevent wrapping due to max-width */
+    text-align: center;
+  }
 
-    .evaluation-step img {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 10px;
-    }
+  .evaluation-step img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
 
-    .evaluation-step p {
-        font-size: 1em;
-        line-height: 1.4;
-        color: #555;
-    }
+  .evaluation-step p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #555;
+  }
 }
 
 @media (max-width: 1400px) {
-    #logo-title-button h1 {
-        font-size: 0.7em;
-    }
+  #logo-title-button h1 {
+    font-size: 0.7em;
+  }
 
-    .nav-appointment-button {
-        display: block;
-        margin: 10px auto;
-        text-align: center;
-        max-width: 70%;
-        font-size: 0.9em; /* Match text size with nav items */
-        padding: 8px 16px; /* Adjust padding for consistency */
-        transform: scale(0.8);
-    }
-    
-    .about-content {
-        gap: 50px; /* Adjust spacing for medium screens */
-    }
+  .nav-appointment-button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 70%;
+    font-size: 0.9em; /* Match text size with nav items */
+    padding: 8px 16px; /* Adjust padding for consistency */
+    transform: scale(0.8);
+  }
 
-    .about {
-        padding: 40px 20px; /* Slightly less padding on medium screens */
-    }
+  .about-content {
+    gap: 50px; /* Adjust spacing for medium screens */
+  }
 
-    .evaluation-process-steps {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
+  .about {
+    padding: 40px 20px; /* Slightly less padding on medium screens */
+  }
 
-    .evaluation-step {
-        flex: 1 1 calc(45% - 30px); /* Two items per row */
-        max-width: calc(45% - 30px); /* Prevent wrapping due to max-width */
-        text-align: center;
-    }
+  .evaluation-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 
-    .evaluation-step img {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 10px;
-    }
+  .evaluation-step {
+    flex: 1 1 calc(45% - 30px); /* Two items per row */
+    max-width: calc(45% - 30px); /* Prevent wrapping due to max-width */
+    text-align: center;
+  }
 
-    .evaluation-step p {
-        font-size: 1em;
-        line-height: 1.4;
-    }
+  .evaluation-step img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .evaluation-step p {
+    font-size: 1em;
+    line-height: 1.4;
+  }
 }
 
 /* Specific Media Query for iPad Air (820px width) */
 @media (max-width: 820px) {
-    .about-content {
-        flex-direction: column; /* Stack the content vertically */
-        align-items: center; /* Center-align both text and image */
-        gap: 20px; /* Reduce gap for better spacing */
-    }
+  .about-content {
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center-align both text and image */
+    gap: 20px; /* Reduce gap for better spacing */
+  }
 
-    .about-image img {
-        width: 60%; /* Scale down the image width */
-        margin: 0 auto; /* Center the image */
-        max-width: 300px; /* Ensure it doesn't get too large */
-    }
+  .about-image img {
+    width: 60%; /* Scale down the image width */
+    margin: 0 auto; /* Center the image */
+    max-width: 300px; /* Ensure it doesn't get too large */
+  }
 
-    .about-text {
-        text-align: center; /* Center-align the text */
-        padding: 0 15px; /* Add side padding for better spacing */
-    }
+  .about-text {
+    text-align: center; /* Center-align the text */
+    padding: 0 15px; /* Add side padding for better spacing */
+  }
 
-    .about-text h2 {
-        font-size: 2em; /* Adjust heading size */
-    }
+  .about-text h2 {
+    font-size: 2em; /* Adjust heading size */
+  }
 
-    .about {
-        padding: 20px 10px; /* Reduce padding to fit content better */
-    }
+  .about {
+    padding: 20px 10px; /* Reduce padding to fit content better */
+  }
 
-    /* assessments page */
-    .assessments-header {
-        height: 40vh; /* Reduce header height */
-    }
+  /* assessments page */
+  .assessments-header {
+    height: 40vh; /* Reduce header height */
+  }
 
-    .assessments-header h1 {
-        font-size: 2rem; /* Smaller font size for small screens */
-    }
+  .assessments-header h1 {
+    font-size: 2rem; /* Smaller font size for small screens */
+  }
 
-    .evaluation-process-steps {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px; /* Adjust gap for smaller screens */
-    }
+  /* Evaluation Types Grid */
+  .evaluation-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 4rem 0;
+  }
 
-    .evaluation-step {
-        flex: 1 1 calc(90% - 20px); /* Full width for smaller screens */
-        max-width: calc(90% - 20px);
-        text-align: center;
-    }
+  .evaluation-card {
+    border: 2px solid var(--color-accent);
+    border-radius: 16px;
+    padding: 2rem;
+    background-color: var(--white);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-    .evaluation-step img {
-        width: 50px;
-        height: 50px;
-    }
+  .evaluation-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+  }
 
-    .evaluation-step p {
-        font-size: 0.95em;
-        line-height: 1.3;
-    }
+  .evaluation-card p {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    line-height: 1.6;
+  }
 
-    /* Therapy Page */
-    .therapy-process-content {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center;
-    }
+  .evaluation-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
 
-    .therapy-intro-section-content {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center;
-    }
+  .evaluation-step {
+    flex: 1 1 calc(90% - 20px); /* Full width for smaller screens */
+    max-width: calc(90% - 20px);
+    text-align: center;
+  }
 
-    /* Contact Page */
-    .request-appointment-section {
-        padding: 20px; /* Reduce padding */
-    }
+  .evaluation-step img {
+    width: 50px;
+    height: 50px;
+  }
 
-    .request-appointment-content {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center;
-    }
+  .evaluation-step p {
+    font-size: 0.95em;
+    line-height: 1.3;
+  }
 
-    .request-appointment-image {
-        margin-right: 0; /* Remove margin when stacked */
-        max-width: 80%; /* Limit image width on medium screens */
-        margin-bottom: 20px; /* Add spacing below the image */
-    }
+  /* Therapy Page */
+  .therapy-process-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
 
-    .request-appointment-text {
-        max-width: 100%; /* Allow text to expand fully */
-        padding: 0 10px; /* Add side padding for readability */
-    }
+  .therapy-intro-section-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
 
-    .request-appointment-text h2 {
-        font-size: 2em; /* Adjust font size */
-    }
+  /* Contact Page */
+  .request-appointment-section {
+    padding: 20px; /* Reduce padding */
+  }
 
-    .request-appointment-text h3 {
-        font-size: 1.1em; /* Adjust font size */
-    }
+  .request-appointment-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
 
-    .request-appointment-text p {
-        font-size: 0.95em; /* Adjust font size for smaller screens */
-    }
+  .request-appointment-image {
+    margin-right: 0; /* Remove margin when stacked */
+    max-width: 80%; /* Limit image width on medium screens */
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
 
-    /* footer */
-    .take-step-section {
-        flex-direction: column; /* Stack the content vertically */
-        text-align: center;
-    }
+  .request-appointment-text {
+    max-width: 100%; /* Allow text to expand fully */
+    padding: 0 10px; /* Add side padding for readability */
+  }
 
-    .take-step-content {
-        padding: 10px;
-    }
+  .request-appointment-text h2 {
+    font-size: 2em; /* Adjust font size */
+  }
 
-    .take-step-image {
-        margin: 20px 0 0; /* Add spacing above the image */
-    }
+  .request-appointment-text h3 {
+    font-size: 1.1em; /* Adjust font size */
+  }
 
-    .take-step-content h2 {
-        font-size: 2em; /* Adjust font size for smaller screens */
-    }
+  .request-appointment-text p {
+    font-size: 0.95em; /* Adjust font size for smaller screens */
+  }
 
-    .take-step-content p {
-        font-size: 1em; /* Reduce paragraph font size */
-    }
+  /* footer */
+  .take-step-section {
+    flex-direction: column; /* Stack the content vertically */
+    text-align: center;
+  }
+
+  .take-step-content {
+    padding: 10px;
+  }
+
+  .take-step-image {
+    margin: 20px 0 0; /* Add spacing above the image */
+  }
+
+  .take-step-content h2 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  .take-step-content p {
+    font-size: 1em; /* Reduce paragraph font size */
+  }
 }
 
 @media (max-width: 768px) {
-    /* Shrink site name */
-    #logo-title-button h1 {
-        font-size: 0.7em;
-    }
+  /* Shrink site name */
+  #logo-title-button h1 {
+    font-size: 0.7em;
+  }
 
-    #logo-title-button img {
-        width: 50px;
-        height: 50px;
-        margin-right: 10px;
-    }    
+  #logo-title-button img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
 
-    /* Show burger menu */
-    .burger-menu {
-        display: flex; /* Display the burger menu on smaller screens */
-        flex-direction: column; /* Stack spans vertically */
-        justify-content: space-between;
-        width: 25px; /* Set width of the burger menu */
-        height: 20px; /* Adjust height */
-    }
-    
-    /* Nav menu hidden by default */
-    .nav-menu {
-        display: none; /* Keep nav menu hidden initially */
-    }
+  /* Show burger menu */
+  .burger-menu {
+    display: flex; /* Display the burger menu on smaller screens */
+    flex-direction: column; /* Stack spans vertically */
+    justify-content: space-between;
+    width: 25px; /* Set width of the burger menu */
+    height: 20px; /* Adjust height */
+  }
 
-    /* Nav menu active and displayed */
-    .nav-menu.active {
-        display: flex; /* Display nav menu when active */
-        flex-direction: column; /* Stack items */
-        position: absolute;
-        top: 100%; /* Position below the header */
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 1000; /* Ensure above content but below burger */
-    }
+  /* Nav menu hidden by default */
+  .nav-menu {
+    display: none; /* Keep nav menu hidden initially */
+  }
 
-    .nav-appointment-button .appointment-button {
-        font-size: 0.9em; /* Reduce font size */
-        transform: scale(0.7); /* Slightly shrink the button */
-        margin-left: 35px;
-        margin-right: -20px;
-    }
-    
-    /* Hero Adjustments */
-    .hero {
-        height: 50vh;
-    }
+  /* Nav menu active and displayed */
+  .nav-menu.active {
+    display: flex; /* Display nav menu when active */
+    flex-direction: column; /* Stack items */
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure above content but below burger */
+  }
 
-    .hero h2 {
-        font-size: 2em;
-    }
+  .nav-appointment-button .appointment-button {
+    font-size: 0.9em; /* Reduce font size */
+    transform: scale(0.7); /* Slightly shrink the button */
+    margin-left: 35px;
+    margin-right: -20px;
+  }
 
-    .cta-button {
-        padding: 10px 20px;
-    }
+  /* Hero Adjustments */
+  .hero {
+    height: 50vh;
+  }
 
-    /* Navigation */
-    nav ul {
-        gap: 15px;
-        flex-direction: column;
-    }
+  .hero h2 {
+    font-size: 2em;
+  }
 
-    /* Welcome Section */
-    .welcome {
-        flex-direction: column;
-    }
+  .cta-button {
+    padding: 10px 20px;
+  }
 
-    .welcome-content p {
-        margin-bottom: 20px;
-    }
-    
-    .welcome-image {
-        padding: 0;
-    }
+  /* Navigation */
+  nav ul {
+    gap: 15px;
+    flex-direction: column;
+  }
 
-    /* Home Page */
-    
-    /* Expertise Section */
-    .expertise-content {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px; /* Adjust padding for mobile view */
-    }
+  /* Welcome Section */
+  .welcome {
+    flex-direction: column;
+  }
 
-    .expertise-item {
-        flex: 0 1 auto;
-        min-width: 320px;
-        max-width: 90%;
-        margin: 20px auto;
-        padding: 15px;
-        border-radius: 8px;
-        background-color: #fff;
-    }
+  .welcome-content p {
+    margin-bottom: 20px;
+  }
 
-    .home-expertise {
-        padding: 40px 20px; /* Adjust padding to accommodate small screens */
-    }
+  .welcome-image {
+    padding: 0;
+  }
 
-    .home-about-content {
-        flex-direction: column; /* Stack image and text */
-        text-align: center; /* Center-align content */
-        gap: 20px; /* Adjust spacing */
-    }
+  /* Home Page */
 
-    .home-about-image img {
-        width: 100%; /* Full width for smaller screens */
-        max-width: 300px; /* Optional max-width */
-    }
+  /* Expertise Section */
+  .expertise-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adjust padding for mobile view */
+  }
 
-    .home-about-text {
-        max-width: none; /* Allow text to fill the width */
-        text-align: center; /* Center-align text */
-    }
+  .expertise-item {
+    flex: 0 1 auto;
+    min-width: 320px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
 
-    .home-about-text h2 {
-        font-size: 2em; /* Adjust heading size for smaller screens */
-    }
+  .home-expertise {
+    padding: 40px 20px; /* Adjust padding to accommodate small screens */
+  }
 
-    .home-about-text p {
-        font-size: 1em; /* Adjust paragraph font size */
-    }
+  .home-about-content {
+    flex-direction: column; /* Stack image and text */
+    text-align: center; /* Center-align content */
+    gap: 20px; /* Adjust spacing */
+  }
 
-    /* services page */
-    .evaluation-process-steps-item {
-        flex: 1 1 45%; /* Allows two items per row on medium-small screens */
-    }
+  .home-about-image img {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 300px; /* Optional max-width */
+  }
 
-    /* about page */
-    .about {
-        padding: 20px 10px; /* Reduce overall padding */
-    }
+  .home-about-text {
+    max-width: none; /* Allow text to fill the width */
+    text-align: center; /* Center-align text */
+  }
 
-    .about-content {
-        flex-direction: column; /* Stack image and text */
-        gap: 20px; /* Adjust spacing */
-    }
+  .home-about-text h2 {
+    font-size: 2em; /* Adjust heading size for smaller screens */
+  }
 
-    .about-image img {
-        width: 100%; /* Make image full width */
-        max-width: 300px; /* Optional: Limit max width */
-        margin-left: 0; /* Reset margin */
-    }
+  .home-about-text p {
+    font-size: 1em; /* Adjust paragraph font size */
+  }
 
-    .about-text {
-        text-align: center; /* Center-align text */
-        max-width: none; /* Allow full width */
-    }
+  /* services page */
+  .evaluation-process-steps-item {
+    flex: 1 1 45%; /* Allows two items per row on medium-small screens */
+  }
 
-    .about-text h2 {
-        font-size: 2em; /* Reduce heading size */
-    }
+  /* about page */
+  .about {
+    padding: 20px 10px; /* Reduce overall padding */
+  }
 
-    .about-text p {
-        font-size: 1em; /* Reduce paragraph font size */
-    }
+  .about-content {
+    flex-direction: column; /* Stack image and text */
+    gap: 20px; /* Adjust spacing */
+  }
 
-    /* consults page */
-    .clinical-consultations-section {
-        flex-direction: column;
-        text-align: center;
-    }
+  .about-image img {
+    width: 100%; /* Make image full width */
+    max-width: 300px; /* Optional: Limit max width */
+    margin-left: 0; /* Reset margin */
+  }
 
-    .clinical-consultations-description,
-    .clinical-consultations-image {
-        flex: unset;
-    }
+  .about-text {
+    text-align: center; /* Center-align text */
+    max-width: none; /* Allow full width */
+  }
 
-    .clinical-consultations-description h2 {
-        font-size: 2em;
-    }
+  .about-text h2 {
+    font-size: 2em; /* Reduce heading size */
+  }
 
-    .clinical-consultations-image img {
-        max-width: 100%;
-    }
+  .about-text p {
+    font-size: 1em; /* Reduce paragraph font size */
+  }
 
-    .consults-conclusion-section-content {
-        flex-direction: column;
-    }
+  /* consults page */
+  .clinical-consultations-section {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    /* assessments page */
-    .assessments-intro-section-content,
-    .assessments-conclusion-section-content {
-        flex-direction: column;
-    }
+  .clinical-consultations-description,
+  .clinical-consultations-image {
+    flex: unset;
+  }
 
-    .evaluation-process-steps {
-        flex-direction: column; /* Ensure vertical stacking */
-        align-items: center; /* Proper centering */
-        gap: 25px; /* Slightly tighter spacing for small screens */
-        padding: 0 10px; /* Add padding to edges for smaller screens */
-    }
+  .clinical-consultations-description h2 {
+    font-size: 2em;
+  }
 
-    .evaluation-step {
-        width: 90%; /* Ensure steps aren't too wide */
-        max-width: 350px; /* Optional: Limit max width */
-        text-align: center; /* Ensure everything is centered */
-    }
+  .clinical-consultations-image img {
+    max-width: 100%;
+  }
 
-    .evaluation-step img {
-        width: 50px; /* Reduce icon size further */
-        height: 50px;
-        margin-bottom: 10px;
-    }
+  .consults-conclusion-section-content {
+    flex-direction: column;
+  }
 
-    .evaluation-step p {
-        font-size: 0.95em; /* Adjust font size for smaller screens */
-        line-height: 1.3;
-        margin: 0 auto; /* Center text block */
-    }
+  /* assessments page */
+  .assessments-intro-section-content,
+  .assessments-conclusion-section-content {
+    flex-direction: column;
+  }
 
-    /* contact page */
-    .availability-content div {
-        max-width: 90%; /* Set a maximum width for the cards */
-    }
+  .evaluation-process-steps {
+    flex-direction: column; /* Ensure vertical stacking */
+    align-items: center; /* Proper centering */
+    gap: 25px; /* Slightly tighter spacing for small screens */
+    padding: 0 10px; /* Add padding to edges for smaller screens */
+  }
 
-    /* footer */
-    .footer-info {
-        margin: 40px; /* Limit width to 90% of the screen */
-    }
+  .evaluation-step {
+    width: 90%; /* Ensure steps aren't too wide */
+    max-width: 350px; /* Optional: Limit max width */
+    text-align: center; /* Ensure everything is centered */
+  }
 
-    .contact-info p {
-        font-size: 0.85em; /* Adjust font size for smaller screens */
-    }
+  .evaluation-step img {
+    width: 50px; /* Reduce icon size further */
+    height: 50px;
+    margin-bottom: 10px;
+  }
 
-    .footer-logo img {
-        margin-bottom: 15px; /* Add a bit more space below the logo */
-    }
+  .evaluation-step p {
+    font-size: 0.95em; /* Adjust font size for smaller screens */
+    line-height: 1.3;
+    margin: 0 auto; /* Center text block */
+  }
 
-    .appointment-times-item span {
-        display: block; /* Ensures each day and time is on a new line */
-    }
+  /* contact page */
+  .availability-content div {
+    max-width: 90%; /* Set a maximum width for the cards */
+  }
 
-    .appointment-times-item {
-        margin-bottom: 15px; /* Adds spacing between each cluster of information */
-    }
+  /* footer */
+  .footer-info {
+    margin: 40px; /* Limit width to 90% of the screen */
+  }
+
+  .contact-info p {
+    font-size: 0.85em; /* Adjust font size for smaller screens */
+  }
+
+  .footer-logo img {
+    margin-bottom: 15px; /* Add a bit more space below the logo */
+  }
+
+  .appointment-times-item span {
+    display: block; /* Ensures each day and time is on a new line */
+  }
+
+  .appointment-times-item {
+    margin-bottom: 15px; /* Adds spacing between each cluster of information */
+  }
 }
