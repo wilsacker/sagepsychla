@@ -1019,11 +1019,11 @@ footer {
   color: #555;
 }
 
-.assessments-intro-section-text h3 {
+.assessment-card-section-header {
   font-size: 2rem;
   margin: 30px;
   text-align: center;
-  color: #555;
+  color: #333 !important;
 }
 
 .assessments-intro-section-text p {
@@ -1072,23 +1072,27 @@ footer {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .assessment-card {
   border-radius: 16px;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   background-color: #c8e0e4;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   min-height: 320px;
+  position: relative;
 }
 
 .assessment-card h3 {
   font-size: 1.35rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0; /* ensure no default top margin interferes */
 }
 
 .assessment-card p {
