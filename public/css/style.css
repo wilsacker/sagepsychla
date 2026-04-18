@@ -501,7 +501,7 @@ footer {
   /* background-color: #C8D4CA;
     background-color: #f0f4f1;
     background-color: #e3ebe7; */
-  background-color: #f4f4f4;
+  background-color: #EAEFF1;
   text-align: center;
   justify-content: center; /* Center the cards */
   gap: 30px; /* Reduce gap slightly for better spacing */
@@ -599,7 +599,7 @@ footer {
 
 .testimonials {
   padding: 60px 40px;
-  background-color: #f7f7f7;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -613,8 +613,8 @@ footer {
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
+  gap: 22px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -622,7 +622,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #b7c497;
   gap: 12px;
   padding: 28px 24px;
   border-radius: 8px;
@@ -633,6 +633,7 @@ footer {
 
 .testimonial-box p {
   margin: 0;
+  color: #000;
 }
 
 .testimonial-box > p:not(.testimonial-name) {
@@ -641,7 +642,6 @@ footer {
   flex: 1;
   font-size: 0.95rem;
   line-height: 1.65;
-  color: #4f4f4f;
   text-align: center;
   font-style: italic;
 }
@@ -666,7 +666,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 60px 40px;
-  background-color: #f7f7f7;
+  background-color: #EAEFF1;
 }
 
 .home-about-content {
