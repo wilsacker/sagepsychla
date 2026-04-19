@@ -25,9 +25,10 @@
   --color-button-hover: #618d9e;
   
   /* Accent Colors */
-  --color-card-primary:#f2e0bd;
-  --color-card-secondary:#B7C497;
+  --color-card-primary:#e6cfb5;
+  --color-card-secondary:#c3cfa5;
   --color-card-tertiary:#d5dfdc;
+  --color-card-quarternary:#f1dbc2;
   --color-soft-gray:#f2f2f2;
   --color-shadow:#333333;
   --white:#ffffff;
@@ -289,7 +290,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-car-primary);
   padding: 20px;
   margin: 40px;
   border-radius: 8px;
@@ -366,7 +367,7 @@ footer {
   flex: 1 1 100%;
   min-width: 400px;
   padding: 15px;
-  background-color: var(--color-card-primary);
+  background-color: var(--color-card-quarternary);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1; /* Ensures cards stretch evenly */
