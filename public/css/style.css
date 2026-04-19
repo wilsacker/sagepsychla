@@ -2,6 +2,47 @@
    RESET & BASE STYLES
 ================================================== */
 
+/* Root variables */
+:root {
+  /* Typography */
+  --font-primary: "Roboto", san-serif;
+
+  --font-size: ;
+  --line-height: ;
+  
+  /* Brand Color Palette */
+  --color-header:#eaf2ef;
+  --color-footer:#d5dfdc;
+  --color-bg-primary:#eaf2ef;
+  --color-bg-secondary:#dfebf0;
+  --color-bg-tertiary:#f2e0bd;
+  --color-bg-quaternary:#EAEFF1;
+  --color-bg-quinary:#d5dfdc;
+  --color-bg-dark: ;
+
+  /* Button Color */
+  --color-button:#6f9e61;
+  --color-button-hover: #618d9e;
+  
+  /* Accent Colors */
+  --color-card-primary:#f2e0bd;
+  --color-card-secondary:#B7C497;
+  --color-card-tertiary:#d5dfdc;
+  --color-soft-gray:#f2f2f2;
+  --color-shadow:#333333;
+  --white:#ffffff;
+  --black:#000000;
+  
+  /* Text Colors */
+  --color-text-light:#ffffff;
+  --color-text-gray:#888888;
+  --color-text-dark-gray:#555555;
+  --color-text-dark:#333333;
+
+  /* Visual Design */
+  --transition: 0.3s ease;
+}
+
 /* Reset */
 * {
   margin: 0;
@@ -14,8 +55,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  color: #333;
+  font-family: var(--font-primary);
+  color: var(--color-text-dark);
 }
 
 main {
@@ -29,9 +70,9 @@ main {
 /* Base button style */
 .appointment-button {
   padding: 8px 20px;
-  border: 1px solid #333;
+  border: 1px solid var(--color-text-dark);
   text-decoration: none;
-  color: #333;
+  color: var(--color-text-dark);
   font-weight: bold;
   letter-spacing: 0.8px;
   border-radius: 4px;
@@ -41,7 +82,7 @@ main {
 
 /* Hover effect */
 .appointment-button:hover {
-  background-color: #333;
+  background-color: var(--color-text-dark);
   color: #fff;
 }
 
@@ -55,7 +96,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  background-color: #fff;
+  background-color: var(--color-header);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 1em;
   position: relative;
@@ -94,7 +135,7 @@ header {
   font-size: 1.8em;
   font-weight: bold;
   letter-spacing: 0.5px;
-  color: #333;
+  color: var(--color-text-dark);
   text-decoration: none;
 }
 
@@ -130,7 +171,7 @@ nav ul li a {
   display: inline-flex; /* Ensures the text and icon are treated as a single unit */
   align-items: center; /* Vertically centers the items */
   text-decoration: none;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 /* Default nav menu */
@@ -151,7 +192,7 @@ nav ul li a {
   display: block;
   height: 3px;
   width: 100%;
-  background-color: #333;
+  background-color: var(--color-text-dark);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -174,21 +215,21 @@ nav ul li a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffffff;
+  background-color: var(--color-text-light);
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: var(--color-text-dark);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: var(--color-soft-gray);
 }
 
 .dropdown:hover .dropdown-content {
@@ -215,21 +256,21 @@ nav ul li a {
   font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
   padding: 8px 16px;
   display: inline-block;
-  background-color: #6f9e61;
+  background-color: var(--color-button);
   color: #fff;
   text-decoration: none;
   border: 2px solid transparent;
   border-radius: 8px;
   transition: all 0.3s ease; /* Smooth transition for hover effects */
-  box-shadow: 0 4px 10px #333;
+  box-shadow: 0 4px 10px var(--color-text-dark);
 }
 
 .nav-appointment-button .appointment-button:hover {
-  background-color: #6f9e61;
+  background-color: var(--color-button);
   color: #fff;
   transform: scale(1.1);
   box-shadow: 0 2px 5px #333;
-  border-color: #6f9e61; /* Optional border highlight */
+  border-color: var(--color-button); /* Optional border highlight */
 }
 
 /* ==================================================
@@ -238,7 +279,7 @@ nav ul li a {
 
 footer {
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: var(--color-bg-quaternary);
   position: relative;
   width: 100%;
 }
@@ -248,7 +289,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: var(--color-bg-primary);
   padding: 20px;
   margin: 40px;
   border-radius: 8px;
@@ -271,7 +312,7 @@ footer {
 .take-step-content p {
   font-size: 1.1em;
   margin-bottom: 20px;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
 
 .take-step-image {
@@ -292,7 +333,7 @@ footer {
   font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
   padding: 8px 16px;
   display: inline-block;
-  background-color: #6f9e61;
+  background-color: var(--color-button);
   color: #fff;
   text-decoration: none;
   border: 2px solid transparent;
@@ -302,16 +343,16 @@ footer {
 }
 
 .footer-appointment-button:hover {
-  background-color: #6f9e61;
+  background-color: var(--color-button);
   color: #fff;
   transform: scale(1.1);
   box-shadow: 0 2px 5px #333;
-  border-color: #6f9e61; /* Optional border highlight */
+  border-color: var(--color-button); /* Optional border highlight */
 }
 
 /* Footer Info Section */
 .footer-section {
-  background-color: #ffffff;
+  background-color: var(--color-footer);
   padding: 20px;
   border-top: 2px solid #e0e0e0;
 }
@@ -325,7 +366,7 @@ footer {
   flex: 1 1 100%;
   min-width: 400px;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: var(--color-card-primary);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1; /* Ensures cards stretch evenly */
@@ -343,7 +384,7 @@ footer {
 
 .footer-card p {
   margin: 10px 0;
-  color: #333;
+  color: var(--color-text-dark);
   font-size: 1em;
 }
 
@@ -375,7 +416,7 @@ footer {
 
 .footer-copy {
   font-size: 0.9em;
-  color: #777;
+  color: var(--color-text-dark);
   margin: 5px 0;
 }
 
@@ -458,8 +499,8 @@ footer {
 .welcome {
   display: flex;
   align-items: center;
-  padding: 60px 40px;
-  background-color: #f7f7f7;
+  padding: 60px 60px;
+  background-color: var(--color-bg-primary);
 }
 
 /* Welcome Content */
@@ -477,7 +518,7 @@ footer {
 .welcome-content p {
   font-size: 1.1em;
   line-height: 1.6;
-  color: #555;
+  color: var(--color-text-dark);
   font-style: italic;
 }
 
@@ -501,7 +542,7 @@ footer {
   /* background-color: #C8D4CA;
     background-color: #f0f4f1;
     background-color: #e3ebe7; */
-  background-color: #EAEFF1;
+  background-color: var(--color-bg-secondary);
   text-align: center;
   justify-content: center; /* Center the cards */
   gap: 30px; /* Reduce gap slightly for better spacing */
@@ -531,7 +572,7 @@ footer {
   flex: 1 1 calc(33.333% - 30px); /* 3 cards per row, minus gap */
   max-width: 400px; /* Limit the maximum width */
   min-width: 240px; /* Ensure a reasonable minimum width */
-  background-color: white;
+  background-color: var(--color-card-secondary);
   padding: 20px;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -556,13 +597,13 @@ footer {
   font-weight: bold;
   margin: 10px;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .home-expertise-item p {
   font-size: 1em;
   line-height: 1.5;
-  color: #555;
+  color: var(--color-text-dark);
   margin: 8px;
 }
 
@@ -590,7 +631,7 @@ footer {
 .expertise-item p {
   font-size: 1em;
   line-height: 1.5;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
 
 /* =====================================
@@ -599,7 +640,7 @@ footer {
 
 .testimonials {
   padding: 60px 40px;
-  background-color: #fff;
+  background-color: var(--color-bg-primary);
   text-align: center;
 }
 
@@ -607,7 +648,7 @@ footer {
   font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .testimonials-grid {
@@ -622,7 +663,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #b7c497;
+  background-color: var(--color-card-primary);
   gap: 12px;
   padding: 28px 24px;
   border-radius: 8px;
@@ -640,19 +681,18 @@ footer {
   display: flex;
   align-items: center;
   flex: 1;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.65;
   text-align: center;
   font-style: italic;
 }
 
 .testimonial-name {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.3;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: #666;
   text-align: right !important;
   margin-top: 4px;
 }
@@ -666,7 +706,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 60px 40px;
-  background-color: #EAEFF1;
+  background-color: var(--color-bg-secondary);
 }
 
 .home-about-content {
@@ -702,7 +742,7 @@ footer {
 .home-about-text p {
   font-size: 1.1em;
   line-height: 1.6;
-  color: #555;
+  color: var(--color-text-dark-gray);
   margin-bottom: 20px;
 }
 
@@ -760,6 +800,9 @@ footer {
    ABOUT ME CONTENT SECTION
 ===================================== */
 
+.about {
+  background-color: var(--color-bg-quaternary);
+}
 .about-content {
   display: flex;
   align-items: center;
@@ -798,7 +841,7 @@ footer {
   font-size: 1.1em;
   line-height: 1.6;
   padding-bottom: 15px;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
 
 /* Services Page */
@@ -839,7 +882,7 @@ footer {
 
 .services-expertise {
   padding: 60px 40px;
-  background-color: #ffffff;
+  background-color: var(--color-bg-primary);
   text-align: center;
 }
 
@@ -891,13 +934,13 @@ footer {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .services-expertise-item p {
   font-size: 1em;
   line-height: 1.5;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
 
 .services-expertise-item a {
@@ -910,6 +953,127 @@ footer {
 
 .services-expertise-item a:hover {
   color: #0056b3;
+}
+
+/* Solution-Focused Therapy Page */
+
+/* =====================================
+   THERAPY HEADER SECTION
+===================================== */
+.therapy-header {
+  background-image: url("/images/therapy-header.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.therapy-header h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* =====================================
+   THERAPY INTRODUCTION SECTION
+===================================== */
+.therapy-intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: var(--color-bg-secondary)
+}
+
+.therapy-intro-section-content {
+  display: flex;
+  gap: 80px;
+  max-width: 1200px;
+}
+
+.therapy-intro-section-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.therapy-intro-section-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.therapy-intro-section-text h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: var(--color-text-dark);
+}
+
+.therapy-intro-section-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: var(--color-text-dark-gray);
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.therapy-intro-section-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.therapy-intro-section-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================================
+   THERAPY PROCESS SECTION
+===================================== */
+/* Therapy Process Section */
+.therapy-process-section {
+  padding: 60px 40px;
+  background-color: var(--color-bg-quinary);
+}
+
+.therapy-process-content {
+  display: flex;
+  gap: 40px; /* Space between text and image */
+  align-items: center; /* Align text and image vertically */
+  max-width: 1200px; /* Limit the width of the content */
+  margin: 0 auto; /* Center the section */
+}
+
+.therapy-process-text {
+  flex: 1; /* Make the text take up available space */
+  text-align: left; /* Align text to the left */
+}
+
+.therapy-process-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.therapy-process-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: var(--color-text-dark-gray);
+}
+
+.therapy-process-section-image {
+  flex: 1; /* Make the image take up available space */
+  max-width: 500px; /* Limit the size of the image */
+}
+
+.therapy-process-section-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Ensure the image scales properly */
 }
 
 /* Clinical Consultation Page */
@@ -944,7 +1108,7 @@ footer {
 ===================================== */
 .consults-section {
   padding: 60px 40px;
-  background-color: #f9f9f9;
+  background-color: var(--color-bg-secondary);
 }
 
 .consults-content {
@@ -972,7 +1136,7 @@ footer {
   font-size: 1.1em;
   line-height: 1.6;
   margin-bottom: 15px;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
 
 .consults-image {
@@ -989,6 +1153,11 @@ footer {
 }
 
 /* consults conclusion sections */
+
+.consults-conclusion-section {
+  background-color: var(--color-bg-quinary);
+}
+
 .consults-conclusion-section-content {
   display: flex;
   gap: 40px;
@@ -1020,15 +1189,14 @@ footer {
 .consults-conclusion-section-text h2 {
   font-size: 2em; /* Slightly smaller heading for balance */
   margin-bottom: 20px; /* Adds space below the heading */
-  color: #333;
+  color: var(--color-text-dark);
   text-align: left; /* Aligns text to the left */
 }
 
 .consults-conclusion-section-text p {
   font-size: 1.1em; /* Slightly smaller font size for readability */
   line-height: 1.8; /* Increases line height for better spacing */
-  color: #555;
-  text-align: justify; /* Makes the text alignment cleaner */
+  color: var(--color-text-dark-gray);
 }
 
 /* Psychoeducational Assessments Page */
@@ -1065,7 +1233,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 60px clamp(20px, 10vw, 300px);
-  background-color: #f9f9f9;
+  background-color: var(--color-bg-primary);
 }
 
 .assessments-intro-section-content {
@@ -1080,20 +1248,25 @@ footer {
 .assessments-intro-section-text h2 {
   font-size: 2.5em;
   margin-bottom: 30px;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
+
+/* =====================================
+   ASSESSMENTS CARD SECTION
+===================================== */
 
 .assessment-card-section-header {
   font-size: 2rem;
   margin: 30px;
+  padding-top: 20px;
   text-align: center;
-  color: #333 !important;
+  color: var(--color-text-dark) !important;
 }
 
 .assessments-intro-section-text p {
   font-size: 1.2em;
   line-height: 1.6;
-  color: #555;
+  color: var(--color-text-dark-gray);
   margin-bottom: 15px;
 }
 
@@ -1120,18 +1293,6 @@ footer {
   gap: 2.5rem;
 }
 
-@media (max-width: 1024px) {
-  .assessment-card-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .assessment-card-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
 .assessment-card-wrapper h3 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -1142,7 +1303,7 @@ footer {
 .assessment-card {
   border-radius: 16px;
   padding: 2rem 1.5rem;
-  background-color: #c8e0e4;
+  background-color: var(--color-card-primary);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1171,7 +1332,7 @@ footer {
 .assessments-evaluation-process-section {
   padding: 40px 20px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--color-bg-quinary);
 }
 
 .assessments-evaluation-process-section h2 {
@@ -1183,7 +1344,7 @@ footer {
 .assessments-evaluation-process-section p {
   font-size: 1.2em;
   margin-bottom: 40px;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
 
 .evaluation-process-steps {
@@ -1208,7 +1369,7 @@ footer {
 
 .evaluation-step p {
   font-size: 1em;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
 
 /* =====================================
@@ -1219,7 +1380,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 60px 40px;
-  background-color: #f9f9f9;
+  background-color: var(--color-bg-secondary);
 }
 
 .assessments-conclusion-section-content {
@@ -1244,135 +1405,14 @@ footer {
 .assessments-conclusion-section-text h2 {
   font-size: 2.5em;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .assessments-conclusion-section-text p {
   font-size: 1.2em;
   line-height: 1.6;
-  color: #555;
+  color: var(--color-text-dark-gray);
   margin: 8px;
-}
-
-/* Solution-Focused Therapy Page */
-
-/* =====================================
-   THERAPY HEADER SECTION
-===================================== */
-.therapy-header {
-  background-image: url("/images/therapy-header.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.therapy-header h1 {
-  font-size: 3em;
-  font-weight: bold;
-}
-
-/* =====================================
-   THERAPY INTRODUCTION SECTION
-===================================== */
-.therapy-intro-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 40px;
-  background-color: #f9f9f9;
-}
-
-.therapy-intro-section-content {
-  display: flex;
-  gap: 80px;
-  max-width: 1200px;
-}
-
-.therapy-intro-section-text {
-  flex: 1;
-  max-width: 600px;
-}
-
-.therapy-intro-section-text h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.therapy-intro-section-text h3 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.therapy-intro-section-text p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #555;
-  margin-top: 40px;
-  margin-bottom: 15px;
-}
-
-.therapy-intro-section-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  max-width: 500px;
-}
-
-.therapy-intro-section-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* =====================================
-   THERAPY PROCESS SECTION
-===================================== */
-/* Therapy Process Section */
-.therapy-process-section {
-  padding: 60px 40px;
-  background-color: #ffffff;
-}
-
-.therapy-process-content {
-  display: flex;
-  gap: 40px; /* Space between text and image */
-  align-items: center; /* Align text and image vertically */
-  max-width: 1200px; /* Limit the width of the content */
-  margin: 0 auto; /* Center the section */
-}
-
-.therapy-process-text {
-  flex: 1; /* Make the text take up available space */
-  text-align: left; /* Align text to the left */
-}
-
-.therapy-process-text h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.therapy-process-text p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #555;
-}
-
-.therapy-process-section-image {
-  flex: 1; /* Make the image take up available space */
-  max-width: 500px; /* Limit the size of the image */
-}
-
-.therapy-process-section-image img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  object-fit: cover; /* Ensure the image scales properly */
 }
 
 /* Contact Page */
@@ -1420,12 +1460,17 @@ footer {
 /* =====================================
    Request Appointment Section
 ===================================== */
+
 .request-appointment-section {
+  background-color: var(--color-bg-primary);
+}
+
+.request-appointment-section-box {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; /* Center-align the content */
-  background-color: #ffffff;
+  background-color: var(--color-card-tertiary);
   padding: 50px; /* Add consistent padding */
   border-radius: 10px; /* Rounded corners */
   margin: 40px auto; /* Center the section on the page */
@@ -1453,20 +1498,20 @@ footer {
   font-size: 2.5em; /* Match heading sizes */
   font-weight: bold;
   margin-bottom: 10px;
-  color: #333; /* Match site’s text color */
+  color: var(--color-text-dark);
 }
 
 .request-appointment-text h3 {
   font-size: 1.2em;
   margin-bottom: 20px;
-  color: #555; /* Subtle text color for subtitles */
+  color: var(--color-text-dark-gray);
 }
 
 .request-appointment-text p {
   font-size: 1.1em;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #555; /* Match text color */
+  color: var(--color-text-dark-gray);
 }
 
 .request-appointment-image {
@@ -1484,8 +1529,8 @@ footer {
   font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
   padding: 8px 16px;
   display: inline-block;
-  background-color: #6f9e61;
-  color: #fff;
+  background-color: var(--color-button);
+  color: var(--white);
   text-decoration: none;
   border: 2px solid transparent;
   border-radius: 8px;
@@ -1494,18 +1539,18 @@ footer {
 }
 
 .btn-request-appointment:hover {
-  background-color: #6f9e61;
-  color: #fff;
+  background-color: var(--color-button);
+  color: var(--white);
   transform: scale(1.1);
   box-shadow: 0 2px 5px #333;
-  border-color: #6f9e61; /* Optional border highlight */
+  border-color: var(--color-button);
 }
 
 /* Contact Form */
 .contact-form {
   flex: 1;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -1556,14 +1601,14 @@ footer {
 }
 
 .contact-form button:hover {
-  background-color: #618d9e;
+  background-color: var(--color-button-hover);
 }
 
 /* New Contact Info Section */
 .new-contact-info {
   flex: 1;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: block; /* Remove any flexbox behavior */
 }
@@ -1604,13 +1649,13 @@ footer {
 .availability-section {
   padding: 30px 20px 50px 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: var(--color-bg-secondary);
 }
 
 .availability-section h2 {
   font-size: 2.5em;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
   margin-bottom: 30px;
 }
 
@@ -1620,24 +1665,24 @@ footer {
 }
 
 .availability-card.online {
-  border-left: 5px solid #6f9e61; /* Highlight Online with blue */
+  border-left: 5px solid var(--color-button); /* Highlight Online with blue */
 }
 
 .availability-card.in-person {
-  border-left: 5px solid #6f9e61; /* Highlight In-Person with green */
+  border-left: 5px solid var(--color-button); /* Highlight In-Person with green */
 }
 
 .availability-card h3 {
   font-size: 1.5em; /* Slightly larger heading */
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
   margin-bottom: 10px;
 }
 
 .availability-card ul li {
   font-size: 1.1em; /* Larger font for readability */
   line-height: 1.6;
-  color: #555;
+  color: var(--color-text-dark-gray);
   margin: 8px 25px; /* Add spacing between list items */
 }
 
@@ -1660,7 +1705,7 @@ footer {
 
 .availability-content div {
   flex: 1 1 calc(50% - 30px);
-  background-color: #ffffff; /* Subtle green tone */
+  background-color: var(--color-bg-quaternary);
   padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -1671,19 +1716,19 @@ footer {
 .availability-content h3 {
   font-size: 1.8em; /* Increase font size for clarity */
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
   margin-bottom: 10px;
 }
 
 .availability-content p {
   font-size: 1.2em; /* Slightly larger for readability */
   line-height: 1.8;
-  color: #555; /* Softer text color for better readability */
+  color: var(--color-text-dark-gray);
 }
 
 .availability-content em {
   font-style: italic;
-  color: #333; /* Make emphasis text stand out */
+  color: var(--color-text-dark);
 }
 
 #bev-hills {
@@ -1692,7 +1737,7 @@ footer {
   left: 0;
   right: 0;
   font-size: 0.9em; /* Reduce text size */
-  color: #555; /* Optional: Text color */
+  color: var(--color-text-dark-gray);
 }
 
 /* Rates Section */
@@ -1706,7 +1751,7 @@ footer {
 .services-rates h2 {
   font-size: 2.5em;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
   margin-bottom: 30px;
 }
 
@@ -1740,7 +1785,7 @@ footer {
 .rate-card h3 {
   font-size: 1.5em;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
   margin-bottom: 15px;
   display: flex;
   align-items: center;
@@ -1768,7 +1813,7 @@ footer {
   font-size: 1.1em;
   line-height: 1.6;
   margin: 8px 0;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
 
 /* Bullet Icon Styling */
@@ -1806,7 +1851,7 @@ footer {
 .rate-card p {
   font-size: 1.2em;
   line-height: 1.6;
-  color: #555;
+  color: var(--color-text-dark-gray);
 }
 
 /* ==================================================
@@ -1841,7 +1886,7 @@ footer {
   .evaluation-step p {
     font-size: 1em;
     line-height: 1.4;
-    color: #555;
+    color: var(--color-text-dark-gray);
   }
 }
 
@@ -1890,6 +1935,12 @@ footer {
   .evaluation-step p {
     font-size: 1em;
     line-height: 1.4;
+  }
+}
+
+@media (max-width: 1024px) {
+  .assessment-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -2054,7 +2105,6 @@ footer {
     font-size: 1em; /* Reduce paragraph font size */
   }
 }
-
 
 @media (max-width: 768px) {
   /* Shrink site name */
@@ -2299,5 +2349,11 @@ footer {
 
   .appointment-times-item {
     margin-bottom: 15px; /* Adds spacing between each cluster of information */
+  }
+}
+
+@media (max-width: 600px) {
+  .assessment-card-wrapper {
+    grid-template-columns: 1fr;
   }
 }
