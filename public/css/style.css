@@ -13,10 +13,10 @@
   /* Brand Color Palette */
   --color-header:#eaf2ef;
   --color-footer:#d5dfdc;
-  --color-bg-primary:#eaf2ef;
+  --color-bg-primary:#e5f0ec;
   --color-bg-secondary:#dfebf0;
   --color-bg-tertiary:#f2e0bd;
-  --color-bg-quaternary:#EAEFF1;
+  --color-bg-quaternary:#d8e9f0;
   --color-bg-quinary:#d5dfdc;
   --color-bg-dark: ;
 
@@ -280,7 +280,7 @@ nav ul li a {
 
 footer {
   text-align: center;
-  background-color: var(--color-bg-quaternary);
+  background-color: var(--color-bg-secondary);
   position: relative;
   width: 100%;
 }
@@ -290,7 +290,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-car-primary);
+  background-color: var(--color-bg-quinary);
   padding: 20px;
   margin: 40px;
   border-radius: 8px;
@@ -777,7 +777,6 @@ footer {
 
 .about {
   padding: 60px 40px;
-  background-color: #f9f9f9;
   text-align: center;
 }
 
@@ -805,8 +804,9 @@ footer {
 ===================================== */
 
 .about {
-  background-color: var(--color-bg-quaternary);
+  background-color: var(--color-bg-primary);
 }
+
 .about-content {
   display: flex;
   align-items: center;
@@ -1443,7 +1443,7 @@ footer {
   width: 100%; /* Full width */
   padding: 150px 0; /* Adjust padding as needed for header height */
   text-align: center;
-  color: white; /* Change text color as needed */
+  color: var(--color-text-light);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -1479,7 +1479,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; /* Center-align the content */
-  background-color: var(--color-card-tertiary);
+  background-color: var(--color-card-primary);
   padding: 50px; /* Add consistent padding */
   border-radius: 10px; /* Rounded corners */
   margin: 40px auto; /* Center the section on the page */
@@ -1714,7 +1714,7 @@ footer {
 
 .availability-content div {
   flex: 1 1 calc(50% - 30px);
-  background-color: var(--color-bg-quaternary);
+  background-color: var(--color-card-secondary);
   padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
